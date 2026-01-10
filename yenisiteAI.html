@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sınaq İmtahanı</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <style>
+        :root { --primary: #4a90e2; --success: #28a745; --error: #dc3545; --bg: #f8f9fa; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg); margin: 0; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; border-bottom: 2px solid #eee; padding-bottom: 15px; }
+        h1 { margin: 0; color: #333; font-size: 20px; }
+        .refresh-btn { background-color: var(--primary); color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; }
+        .question-card { background: #fff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+        .question-text { font-weight: 600; font-size: 18px; margin-bottom: 15px; color: #2c3e50; }
+        .options-list { list-style-type: none; padding: 0; }
+        .options-list li { margin-bottom: 10px; padding: 10px 15px; border-radius: 6px; background: #f1f3f5; cursor: pointer; border: 2px solid transparent; }
+        .correct-answer { background-color: #d4edda !important; border-color: var(--success) !important; color: #155724; }
+        .wrong-answer { background-color: #f8d7da !important; border-color: var(--error) !important; color: #721c24; }
+        .submit-btn { display: block; width: 100%; padding: 15px; background-color: var(--success); color: white; border: none; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer; margin-top: 20px; }
+        .result-box { text-align: center; padding: 20px; background: #343a40; color: white; border-radius: 8px; margin-top: 20px; display: none; }
+        .loading { text-align: center; font-size: 1.2em; color: #666; padding: 20px; }
+        .error-msg { color: red; font-weight: bold; text-align: center; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1 id="quizTitle">Quiz Sistemi</h1>
+        <button class="refresh-btn" onclick="startQuiz()">🔄 Yeni 50 Sual</button>
+    </header>
+
+    <div id="loadingMsg" class="loading">Suallar fayldan yüklənir...</div>
+    <div id="errorDisplay" class="error-msg"></div>
+
+    <div id="quizContainer" style="display:none;">
+        <div id="questionsList"></div>
+        <button class="submit-btn" onclick="checkResults()">Nəticəni Göstər</button>
+    </div>
+
+    <div id="resultBox" class="result-box"></div>
+</div>
+
+<script>
+    // FAYLIN ADI BURADADIR
+    const csvFileName = "AICVBLAR(Sheet1).csv";
+    
+    let allQuestionsRaw = [];
+
+    // Səhifə açılan kimi faylı oxumağa başlayır
+    window.onload = function() {
+        fetchData();
+    };
+
+    function fetchData() {
+        fetch(csvFileName)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Fayl tapılmadı! Adın "${csvFileName}" olduğuna və "Live Server" istifadə etdiyinizə əmin olun.`);
+                }
+                return response.text();
+            })
+            .then(csvText => {
+                Papa.parse(csvText, {
+                    header: true,
+                    skipEmptyLines: true,
+                    transformHeader: h => h.trim(),
+                    complete: function(results) {
+                        processData(results);
+                    }
+                });
+            })
+            .catch(error => {
+                document.getElementById('loadingMsg').style.display = 'none';
+                document.getElementById('errorDisplay').innerText = "XƏTA: " + error.message;
+            });
+    }
+
+    function processData(results) {
+        // Sütun yoxlanışı
+        const required = ["Sual", "A", "B", "C", "D", "Dogru cavab"];
+        const missing = required.filter(field => !results.meta.fields.includes(field));
+
+        if (missing.length > 0) {
+            document.getElementById('loadingMsg').style.display = 'none';
+            document.getElementById('errorDisplay').innerText = `XƏTA: CSV faylında bu sütunlar yoxdur: ${missing.join(", ")}`;
+            return;
+        }
+
+        allQuestionsRaw = results.data.filter(item => item.Sual && item["Dogru cavab"]);
+        
+        if (allQuestionsRaw.length > 0) {
+            document.getElementById('loadingMsg').style.display = 'none';
+            document.getElementById('quizContainer').style.display = 'block';
+            renderQuiz();
+        } else {
+            document.getElementById('loadingMsg').innerText = "Faylda sual tapılmadı.";
+        }
+    }
+
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
+    // Quiz prosesi (əvvəlki kimi)
+    function renderQuiz() {
+        const list = document.getElementById('questionsList');
+        list.innerHTML = '';
+        document.getElementById('resultBox').style.display = 'none';
+        document.querySelector('.submit-btn').style.display = 'block';
+
+        // 50 sual limiti
+        let shuffledSelection = shuffleArray([...allQuestionsRaw]).slice(0, 50);
+        
+        document.getElementById('quizTitle').innerText = `Quiz (${shuffledSelection.length} sual)`;
+
+        shuffledSelection.forEach((q, index) => {
+            let correctLetter = q["Dogru cavab"].trim().toUpperCase();
+            let correctText = q[correctLetter] ? q[correctLetter].trim() : "";
+
+            let options = [q.A, q.B, q.C, q.D].filter(o => o && o.trim() !== "");
+            options = shuffleArray(options);
+
+            const card = document.createElement('div');
+            card.className = 'question-card';
+            card.dataset.correct = correctText; 
+
+            let optionsHtml = '';
+            options.forEach((opt) => {
+                // Dırnaq işarələrini qorumaq üçün replace
+                let safeValue = opt.replace(/"/g, '&quot;');
+                optionsHtml += `
+                    <li>
+                        <label>
+                            <input type="radio" name="question_${index}" value="${safeValue}">
+                            ${opt}
+                        </label>
+                    </li>
+                `;
+            });
+
+            card.innerHTML = `
+                <div class="question-text">${index + 1}. ${q.Sual}</div>
+                <ul class="options-list">${optionsHtml}</ul>
+            `;
+            list.appendChild(card);
+        });
+    }
+
+    function checkResults() {
+        const cards = document.querySelectorAll('.question-card');
+        let correctCount = 0;
+        let total = cards.length;
+
+        cards.forEach(card => {
+            const correctAnswerText = card.dataset.correct;
+            const selectedOption = card.querySelector('input[type="radio"]:checked');
+            const listItems = card.querySelectorAll('li');
+            
+            // Köhnə rəngləri sil
+            listItems.forEach(li => li.classList.remove('correct-answer', 'wrong-answer'));
+
+            let isCorrect = false;
+            if (selectedOption) {
+                if (selectedOption.value === correctAnswerText) {
+                    correctCount++;
+                    isCorrect = true;
+                    selectedOption.closest('li').classList.add('correct-answer');
+                } else {
+                    selectedOption.closest('li').classList.add('wrong-answer');
+                }
+            }
+
+            if (!isCorrect) {
+                listItems.forEach(li => {
+                    if (li.innerText.trim() === correctAnswerText) {
+                        li.classList.add('correct-answer');
+                        li.innerHTML += ' <b>(✔ Doğru)</b>';
+                    }
+                });
+            }
+        });
+
+        const scoreBox = document.getElementById('resultBox');
+        scoreBox.style.display = 'block';
+        scoreBox.innerHTML = `<h2>Yekun Bal: ${correctCount} / ${total}</h2>`;
+        document.querySelector('.submit-btn').style.display = 'none';
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function startQuiz() {
+        if(confirm("Yeni suallar yüklənsin?")) {
+            renderQuiz();
+            window.scrollTo(0, 0);
+        }
+    }
+</script>
+
+</body>
+</html>
