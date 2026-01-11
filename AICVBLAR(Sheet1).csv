@@ -1,0 +1,352 @@
+﻿Sual,A,B,C,D,Dogru cavab
+"""3D reconstruction"" komputer görməsində nəyi ifadə edir?",Şəkilin ölçüsünü dəyişdirmək, Hər bir sinif üçün şəkillər yaratmaq,Yalnız şəkillər üzərində optimallaşdırma etmək,Şəkillərin 3D versiyasını yaratmaq,D
+"""AlexNet"" hansı məqsədlə inkişaf etdirilmişdir?",Şəkil ölçülərini dəyişdirmək,Məlumatların kompressiyasi,Obyekt tanıma və şəkil sinifləndirməsi,"Natural language processing",C
+"""Anchor Boxes"" modelinin məqsədi nədir?",Şəkil üzərində təxmin edilən obyekt sahələrinin ölçülərini müəyyən etmək,Modelin optimallaşdırılmasını təmin etmək,Obyektin dəqiq ölçülərini təhlil etmək, Obyektləri eyni ölçüdə təhlil etmək,A
+"""Backpropagation"" prosesi hansı zaman baş verir?",Çıxış səhvi hesablandıqdan sonra,"Çıxışın düzgünlüyü təsdiq edildikdən sonra",Yalnız modelin əvvəlki mərhələsində, Yalnız giriş verilənləri ilə işləyərkən,A
+"""Batch gradient descent"" nədir?","Modelin həll etdiyi hər məsələni asanlaşdırır","Kiçik qruplar ilə öyrənmə",Bütün verilənlərdən istifadə edərək öyrənmə,Yalnız test verilənlərindən istifadə edir,C
+"""Confusion Matrix"" nədir?",Modelin çıxışını vizuallaşdıran cədvəl,Modelin optimallaşdırılması üçün matrix," Verilənlərin təhlilində istifadə edilən matrix", Modelin səhvlərini müəyyən edən matrix,D
+"""Confusion matrix"" nəyi göstərir?",Modelin nəticələrinin səhv olduğunu,Modelin öyrənmə sürətini,"Modelin düzgün işləmədiyini","Modelin doğru və səhv cavablarını",D
+"""Data Augmentation"" metodunun Object Detection-dəki rolu nədir?",Modelin performansını azaldır," Modelin optimallaşdırılmasını təmin edir",Şəkillərin ölçüsünü dəyişdirmək,"Yeni obyektləri tanımaq üçün verilənləri artırır",D
+"""Deep Learning"" alqoritmalarında, xüsusilə komputer görməsində, hansı şəbəkə ən
+çox istifadə edilir?",Autoencoders,Fully Connected Networks,Convolutional Neural Networks (CNN),Recurrent Neural Networks (RNN),C
+"""DeepMind"" hansı şirkətin AI layihəsidir?",Tesla,Google, Facebook,"Microsoft",B
+"""Dimensionality reduction"" nəyi ifadə edir?",Verilənlərin ölçüsünü artırmaq,Verilənlərin ölçüsünü azaltmaq,"Yalnız böyük verilənlərlə işləmək",Modeli daha mürəkkəb etmək,B
+"""Dərin öyrənmə"" nədir?", Sadə öyrənmə üsulu,Maşınların çox qatlı sinir şəbəkələri vasitəsilə öyrənməsi,Məlumatları kiçik hissələrə bölmək,İnsanların düşüncə tərzini təqlid etməsi,B
+"""Edge Computing"" və ""Cloud Computing"" arasındakı əsas fərq nədir?",Cloud Computing yalnız şəkil emalı üçün istifadə olunur,"Edge Computing yalnız lokal mühitdə işləyir, Cloud Computing isə internet
+vasitəsilə işləyir",Edge Computing yalnız verilənləri təhlil etmək üçün istifadə olunur, Edge Computing çox daha sürətlidir,B
+"""Edge detection"" nəyi ifadə edir?", Şəkilin içindəki rəngləri dəyişdirmək,Şəkilin ölçülərini dəyişdirmək,Şəkil içərisindəki əsas konturları və sərhədləri tapmaq," Şəkil məlumatlarını təhlil etmək",C
+"""Faster R-CNN"" modelində hansı komponent daha sürətlidir?",Bounding box tənzimləmə,Pooling layer,Convolutional layers,Region Proposal Network (RPN),D
+"""Focal Loss"" funksiyası nə məqsəd daşıyır?","Çətin nümunələri daha yaxşı öyrənmək və çox sayda asan nümunələri az çəki
+ilə qiymətləndirmək",Yalnız çox sayda obyekt aşkarlamağa kömək etmək, Modelin optimallaşdırılmasını təmin etmək,"Modelin səhvlərini minimuma endirmək",A
+"""Gradient descent"" alqoritması hansı məqsəd üçün istifadə olunur?", Verilənləri daha sürətli öyrətmək,"Modelin çıxışını artırmaq",Modelin səhvlərini azaltmaq,Verilənlərin etiketlənməsini yaxşılaşdırmaq,C
+"""Gradient descent"" alqoritmasının məqsədi nədir?","Verilənləri sinifləndirmək"," Modelin daha sürətli öyrənməsini təmin etmək", Xətti əlaqələri tapmaq, Modelin səhvlərini azaltmaq,D
+"""Haar cascades"" hansı məqsəd üçün istifadə edilir?",Rəngləri dəyişdirmək,Şəkilləri əks etdirən 3D modellər yaratmaq,"Üz tanıma və obyekt aşkarlanması","Yalnız şəkillərin ölçülərini dəyişdirmək",C
+"""Histograms of Oriented Gradients"" (HOG) hansı sahədə istifadə olunur?",Şəkilin kontrastını artırmaq,Obyektin istiqamətini və mövqeyini təhlil etmək,"Şəkil ölçüsünü azaltmaq","Şəkil sinifləndirməsi",B
+"""Image segmentation"" nədir?","Şəkil məlumatlarının dəyişdirilməsi","Şəkilin bütün elementlərini birləşdirmək",Şəkilin müəyyən hissələrə bölünməsi,Şəkilin ölçüsünü azaltmaq,C
+"""Learning rate"" parametri neyron şəbəkələrinin təlimində nə üçün istifadə olunur?",Çıxışı proqnozlaşdırmaq,Modelin öyrənmə sürətini təyin etmək,Aktivasiya funksiyasını seçmək,Verilənləri təhlil etmək,B
+"""Logistic regression"" nə üçün istifadə olunur?",Kategorik verilənləri modeləşdirmək,Sinir şəbəkələrinin qurulmas,"Sayısal verilənləri təhlil etmək",Hər hansı verilən növü ilə işləmək,A
+"""Mask R-CNN"" modelində hansı əlavə funksionallıq mövcuddur?","Bütün obyektləri eyni sinifə aid etmək",Obyektin konturunu (maskasını) da müəyyən etmək,Obyektlərin sayını hesablamaq,Şəkilin ölçüsünü dəyişdirmək,B
+"""Mask R-CNN"" nə üçün istifadə olunur?","Şəkil üzərində rəng dəyişdirmək",Hər hansı bir obyektin təkrarlanması,Obyektlərin maskasını çıxarmaq və təhlil etmək,"Şəkil ölçüsünü azaltmaq",C
+"""Model drift"" nədir?",Modelin tətbiqində baş verən səhvlər,Modelin sürətinin artırılması,Modelin təlim verilənlərindəki dəyişikliklərə uyğunlaşmaması,Modelin təlim prosesində ortaya çıxan yeni məlumatlar,C
+"""Non-Maximum Suppression"" (NMS) metodu nə üçün istifadə olunur?",Obyektin ölçüsünü dəyişdirmək,"Şəkilin rənglərini dəyişdirmək","Bütün aşkar edilmiş obyektləri birləşdirmək və redundanları aradan qaldırmaq",Modelin sürətini artırmaq,C
+"""Object Detection"" modelinin optimallaşdırılması üçün hansı optimizasiya alqoritması
+daha çox istifadə edilir?",Adagrad,"Bütün qeyd edilənlər",Adam,SGD (Stochastic Gradient Descent),B
+"""OpenCV"" nədir?",Komputer görməsi tətbiqləri üçün açıq mənbə kitabxanası,"Şəkil ölçülərini dəyişdirmək üçün proqram",Obyekt aşkarlama proqramı,Yeni şəkil formatı,A
+"""Optical Flow"" nəyi ifadə edir?",Obyektlərin mövqeyinin müəyyən edilməsi,Zamanla şəkil dəyişikliklərini ölçmək,"Şəkillərin müqayisəsi",Həddindən artıq dəyişiklikləri qiymətləndirmək,B
+"""Overfitting"" problemi nədir?","Modelin təlim verilənləri ilə çox uyğunlaşması və yeni verilənlərlə zəif nəticə
+göstərməsi","Modelin heç bir səhv etməməsi",Modelin yalnız test verilənləri ilə işləməsi,Modelin çox təlim verilənləri ilə işləməsi,A
+"""Region Proposal Network"" (RPN) hansı modeldə istifadə olunur?",Mask R-CNN,RetinaNet,YOLO,"Fast R-CNN",D
+"""Reinforcement learning"" nəyi ifadə edir?",Cəzalandırma və mükafatla öyrənmə,İnsan təcrübəsini təkrarlamaq,Verilənlərdəki səhvləri düzəltmək,Verilənləri sinifləndirmək,A
+"""SIFT"" (Scale-Invariant Feature Transform) hansı məqsəd üçün istifadə olunur?"," Şəkillərdəki obyektləri tanımaq",Şəkillərdəki xüsusiyyətləri ölçmək və müqayisə etmək,Şəkilin ölçüsünü dəyişdirmək,Şəkilin təsvirini təkmilləşdirmək,B
+"""Single Shot MultiBox Detector"" (SSD. modelində əsas məqsəd nədir?",Şəkildəki hər bir obyektin sahəsini tapmaq,Obyektləri eyni anda bir neçə dəfə təhlil etmək,Obyektləri müxtəlif ölçülərdə aşkarlamaq,"Şəkilləri yalnız çox sadə şəkildə təhlil etmək",C
+"""Softmax"" funksiyası hansı məqsəd üçün istifadə olunur?",Kategorik siniflərin ehtimallarını hesablamaq,"Sinir hüceyrələrinin ağırlığını optimallaşdırmaq","Çıxış aktivasiya funksiyasını tətbiq etmək",Yalnız qeyri-xətti əlaqələri modelləşdirmək,A
+"""Transfer learning"" nədir?",Yeni verilənlər bazasında modelin sıfırdan öyrənməsi,"Şəkilləri fərqli kateqoriyalara ayırmaq","Öyrənilmiş bir modelin yeni bir problemə tətbiq edilməsi",Yalnız verilənlərin ötürülməsi,C
+"""Transfer learning"" nəyi ifadə edir?",Mövcud modelləri fərqli sahələrə tətbiq etmək,Yeni model yaratmaq üçün daha çox məlumat istifadə etmək,Təlim verilənlərindən alınan nəticələri ötürmək,"Şəkillərdən xüsusiyyət çıxarmaq",A
+"""Vanishing Gradient"" problemi neyron şəbəkələrində nəyi ifadə edir?",Modelin çıxışını artırmaq,Çəkilərin çox kiçik olmasına və öyrənmə sürətinin azalmasına səbəb olmaq,"Modelin qeyri-xətti xüsusiyyətlərindən istifadə etmək",Çıxışın yalnız sıfır olmasını təmin etmək,B
+"""YOLO"" (You Only Look Once) alqoritması hansı növ tətbiqlərdə istifadə olunur?",Obyekt aşkarlama,"Məkan ölçməsi","Video emalı",Şəkil sinifləndirmə,A
+"""YOLOv3"" modelinin hansı xüsusiyyəti onu əvvəlki versiyalardan fərqləndirir?",Obyektlərin dəqiq mövqeyini müəyyən edir,"Yalnız bir dəfə obyektləri təhlil edir","Həm böyük, həm kiçik obyektləri eyni anda aşkarlamağa qadirdir",Yalnız böyük obyektləri aşkarlayır,C
+AI sistemləri hansı zaman daha yaxşı nəticələr göstərir?,"Yalnız yeni proqramlaşdırma üsulları ilə","Əlavə qrafiklər istifadə edildikdə","Kiçik məlumat toplusu ilə","Daha çox verilənlərlə",D
+AI sistemlərinin ən böyük çətinliklərindən biri hansıdır?,Qərar vermə və səhvləri düzəltmə,"Yalnız komputerlər tərəfindən idarə olunması",Verilənlərə asan çıxış," İnsan düşüncə tərzini təqlid etmək",D
+AI və maşın öyrənməsi arasında hansı fərq vardır?,Hər ikisi eyni şeyi ifadə edir,"Maşın öyrənməsi AI-nin tərkib hissəsidir","AI yalnız məlumatları işləyir, maşın öyrənməsi isə məlumatları öyrədir","AI maşın öyrənməsindən asılı deyil",B
+AI və maşın öyrənməsinin əsas fərqi nədir?,"AI yalnız verilənləri işləyir, maşın öyrənməsi isə məlumatları öyrədir","Maşın öyrənməsi AI-nin tərkib hissəsidir",Hər ikisi eyni şeyi ifadə edir,"AI maşın öyrənməsindən asılı deyil",B
+"AI-də hansı texnologiya istifadə olunur ki, maşınlar daha yaxşı və düzgün proqnozlar
+versin?","Veb texnologiyaları","Maşın öyrənməsi","Paralel hesablama",Dərin öyrənmə,B
+"AI-də məlumatlardan öyrənməyə nə ad verilir?","Təbii dil işlənməsi","Fəlsəfə",Təbiətşünaslıq,Maşın öyrənməsi,D
+AI-nin daha sürətli öyrənməsi üçün hansı üsul istifadə olunur?,"Məlumatın kiçildilməsi","Parallel computing","Tək hesablama",Manual təlim,B
+AI-nin hansı növü insan beyinini tam olaraq təqlid etməyə çalışır?,Süni ümumi intellekt (AGI),"Süni dar intellekt (Artificial Narrow Intelligence, ANI)",Süni super intellekt (ASI),"Süni analitik intellekt",A
+AI-nin hansı sahəsi robotların ətraf mühitlə qarşılıqlı əlaqəsini öyrədir?,"Dərin öyrənmə",Təbiət dil işlənməsi,Robototexnika,"Maşın öyrənməsi",C
+AI-nin istifadə olunduğu sahələrdən biri hansıdır?,Yalnız təbii elmlər,Tibbi diaqnoz və müalicə,Yalnız təhsil,"Yalnız əyləncə sənayesi",B
+"AI-nin tətbiqi üçün ətraf mühitlə qarşılıqlı əlaqə çox vacibdir. Bu sahə hansı AI
+növünə aiddir?",Maşın öyrənməsi,"Təbii dil işlənməsi","Gözləmə təhlili",Robototexnika,D
+Aviasiya şirkətləri süni intellektdən necə istifadə edirlər?,Yalnız təyyarə dizaynlarını dəyişdirmək, Uçuşların tam olaraq idarə olunması,Uçuş marşrutlarını daha effektiv etmək,Uçuş qiymətlərini artırmaq,C
+"AI-nin tətbiqində hansı meyar daha çox önəmlidir?",Yalnız məlumatın miqdarı,Verilənlərin keyfiyyəti,Yalnız texniki biliklər,"Texnologiyanın sürəti",B
+Aviasiya sənayesində süni intellektdən istifadə edilən ən geniş tətbiqlər hansılardır?,Uçuşların bilet satışlarını artırmaq,Avtomatik təyyarə idarəetməsi və hava nəqliyyatı,Yalnız sərnişin xidmətləri,Uçuş qiymətləri və sığorta xidmətləri,B
+"Aviasiya sənayesində süni intellektin gələcəyi ilə bağlı hansı əsas trendlər
+mövcuddur?","Yalnız sərnişinlər üçün xidmətlərin artırılması","Aviasiya qiymətlərinin artırılması","Avtomatik idarəetmə və pilot dəstəyi","Təyyarə dizaynlarının dəyişdirilməsi",C
+Aviasiya sənayesində süni intellektin tətbiqinin əsas məqsədi nədir?,"Uçuş qiymətlərini artırmaq",Təyyarə qəzalarını azaltmaq və təhlükəsizliyi artırmaq,Uçuş müddətini artırmaq,"Pilot təlimini azaldmaq",B
+"Aviasiya sənayesində təyyarə qəzalarının qarşısını almaq üçün süni intellekt necə
+istifadə olunur?",Təyyarə xidmətlərində qiymətləri azaltmaq,"Pilotların təlimini artırmaq",Təyyarə pilotlarına real vaxt rejimində dəstək verilməsi,Yalnız uçuş marşrutlarını təhlil etmək,C
+Aviasiyada süni intellekt hansı istiqamətdə inkişaf edir?,"Sərnişin xidmətlərinin ən minimal səviyyəyə endirilməsi",Avtomatik hava nəqliyyat vasitələrinin idarə edilməsi,Uçuşların daha sürətli həyata keçirilməsi,"Təyyarə dizaynlarının təkmilləşdirilməsi",B
+Aviasiyada süni intellektdən istifadə edilən tətbiqlərdən biri hansı sahəyə aiddir?,"Hava limanı bina quruluşlarını dəyişdirmək",Pilotların uçuş zamanı istifadə etdiyi avadanlıqlar,"Sərnişinlərin məlumatlarını və təcrübələrini təkmilləşdirmək",Təyyarələrin dizaynını dəyişdirmək,C
+"Aviasiyada süni intellektdən istifadə edən sistemlər hansı problemi həll etməyə
+kömək edir?","Yalnız uçuş biliklərini artırır",Hava trafikində sıxlığı azaldır,Uçuş zamanı sərnişinlərin yemək seçimlərini idarə edir,Təyyarələrin daha tez qalxmasını təmin edir,B
+"Aviasiyada süni intellektin tətbiqi ilə əlaqədar hansı məsələlər daha çox müzakirə
+edilir?",Avtomatlaşdırmanın insanlar üzərindəki təsiri,"Sərnişinlərin təcrübəsinin təkmilləşdirilməsi",Təyyarə qiymətlərinin dəyişməsi,"Uçuş müddətinin qısaldılması",A
+Bir neyron şəbəkəsinin ən sadə forması hansıdır?,Deep Neural Network (DNN),Perceptron,Convolutional Neural Network (CNN),Recurrent Neural Network (RNN),B
+Convolutional layer-də kernel nədir?,Şəkilin bütün elementlərini artırmaq,"Modelin optimallaşdırılması alqoritması",Verilənləri hesablamaq üçün istifadə olunan filter,Aktivasiya funksiyasıdır,C
+"Convolutional Neural Network (CNN) alqoritmasında hansı növ verilənlər istifadə
+olunur?","Şəkil və görüntü verilənləri",Zaman seriyalı verilənlər,Sinifləndirilmiş verilənlər,Rəqəmsal verilənlər,A
+Convolutional Neural Network (CNN) əsasən hansı növ verilənlərlə işləyir?,"Şəkil və video verilənləri","Audio verilənləri",Mətn verilənləri,Nümerik verilənlər,A
+"Convolutional Neural Network-də ""filter"" nəyi ifadə edir?",Giriş verilənlərini emal edən və görüntüdən xüsusiyyət çıxaran element,"Verilənlərin bölünməsi",Modelin optimallaşdırılması,Verilənlərin təhlilinə tətbiq olunan alqoritm,A
+"Convolutional Neural Network-lərdə ""pooling"" nəyi göstərir?","Modelin optimallaşdırılması","Verilənlər üzərində əməliyyatların tətbiqi",Sinir şəbəkəsinin çox sayda qatlar yaratması,Verilənləri müəyyən ölçüdə sadələşdirmək,D
+"Data augmentation-ın məqsədi nədir?",Verilənlər bazasında yeni şəkillər yaratmaq,Verilənlər bazasını təhlil etmək,"Şəkilləri şişirtmək",Modelin optimallaşdırılmasını təmin etmək,A
+Decision Tree alqoritmasında hansı tip problemi həll edirik?,Xətti proqnozlaşdırma,Qeyri-xətti proqnozlaşdırma,Qruplaşdırma,Sinifləndirmə,D
+Decision tree nədir?,Maşın öyrənməsi üçün ən yaxşı seçim,Çox sayda verilənlərlə işləyən alqoritm,Verilənləri iki və ya daha çox sinifə ayıran model,Sinir şəbəkələrinin əsas forması,C
+Deep learning-də əsas məqsəd nədir?,Çox sayda məlumatla işləmək,Çox qatlı sinir şəbəkələri vasitəsilə verilənləri təhlil etmək,"Verilənləri sadə şəkildə təhlil etmək","Maşınların heç bir təlimat olmadan öyrənməsi",B
+Dərin öyrənmə modelinin ən böyük çatışmazlığı nədir?,Çox vaxt yüksək hesablama gücü tələb etməsi,Yalnız kiçik verilənlərlə işləməsi,"Kiçik verilənlərlə öyrənmə qabiliyyəti",Yalnız qeyri-strukturlaşdırılmış verilənlərlə işləməsi,A
+Dərin öyrənmənin əsas faydası nədir?,"Yalnız sadə verilənlərlə işləmək",Kiçik verilənlərlə işləmək,Verilənlərin çox qatlı təhlilini etmək,Etiketsiz verilənlərə ehtiyac yoxdur,C
+"Faster R-CNN modelində hansı komponent ""region proposal""ları təmin edir?",Softmax layer,Convolutional layers,Region Proposal Network (RPN),Fully Connected layers,C
+Faster R-CNN modelindəki Region Proposal Network (RPN) hansı işləri görür?,Modelin çətin nümunələrini ayırd etmək,Hər bir şəkil üçün region təkliflərini (proposals) müəyyən etmək,"Obyektlərin həqiqi etiketlərini təhlil etmək",Obyektlərin siniflərini müəyyən etmək,B
+"Gözləmə təhlili (Reinforcement learning) hansı növ öyrənmədir?",Cəzalandırma və mükafatla öyrənmə,Kiçik verilənlərlə öyrənmə,Sinifləndirmə ilə öyrənmə,İnsan təcrübəsi ilə öyrənmə,A
+Hansi AI sahəsi maşınların çevrilişli mühitlərdən öyrənməsinə imkan verir?,Qeyri-xətti öyrənmə,Gözləmə təhlili,Qrafik öyrənmə,Səthin öyrənməsi,B
+"Hansi aktivasiya funksiyası çox sayda sıfırla çıxış verir və sıfır olmayan bir nöqtədə
+""heç bir dəyişiklik"" etməz?",Tanh,Softmax,ReLU,Sigmoid,C
+Hansi alqoritma çox sayda verilənlərlə reqressiya modelini qurmağa imkan verir?, K-means,Random Forest,Naive Bayes,Logistic reqressiya,B
+Hansi maşın öyrənmə modeli çoxsaylı verilənlərlə daha effektiv işləyir?,Linear regressiya,Naive Bayes,Deep Learning,Decision Tree,C
+Hansi maşın öyrənmə növü təcrübəyə əsaslanır?,Reinforcement learning,Deep learning,Unsupervised learning,"Supervised learning",A
+Hansi maşın öyrənmə növü verilənlərə əsaslanaraq özünü təkmilləşdirir?,"Unsupervised learning",Reinforcement learning,Clustering,Supervised learning,B
+Hansi metod komputer görməsi üçün şəkil məkanının azaldılmasında istifadə edilir?,Dropout,Activation function,Gradient descent,Pooling,D
+Hansi metod komputer görməsi üçün ən yaygın olaraq istifadə edilir?,Support Vector Machines (SVM),K-means,"Decision Trees",Deep Learning,D
+"Hansi metod neyron şəbəkələrinin təlimində çəkilərin optimallaşdırılmasını təmin
+edir?",Dropout,Data Augmentation,K-fold Cross Validation,Backpropagation,D
+Hansi metodla reqressiya modelində səhvlər ölçülür?,Mean Absolute Error (MAE),Cross-validation,Precision,Recall,A
+"Hansi metrik Object Detection-də ""precision"" və ""recall"" qiymətləndirmək üçün
+istifadə olunur?",Loss function,"Mean Average Precision (mAP)",F1 Score,"Mean Squared Error (MSE)",B
+Hansi metrik Object Detection-də modelin dəqiqliyini ölçmək üçün istifadə edilir?,Intersection over Union (IoU),Accuracy, F1 Score,Mean Squared Error (MSE),A
+Hansi metrik reqressiya modelində daha çox istifadə olunur?,Precision,Mean Absolute Error,Accuracy,Recall,B
+"Hansi model ""supervised learning"" adlanır?",Məlumatlar etiketsizdir,Məlumatlar etikettən istifadə olunur,"Bütün verilənlər təsadüfi toplanır",Yalnız statistikaya əsaslanır,B
+Hansi model çox sayda sinif ilə işləyə bilər?,KNN,Linear reqressiya,Random Forest,Logistic reqressiya,C
+Hansi model verilənlərin qiymətləndirilməsi və uyğunlaşdırılmasında istifadə olunur?,Qrafik modellər,Klasterləşdirmə,"Sıralama modelləri",Sinir şəbəkələri,D
+Hansi model yalnız iki sinifli məlumatla işləyir?,Logistic reqressiya,Multi-class klassifikasiya,"Naive Bayes",KNN,A
+"Hangi neyron şəbəkə növü gələcəkdəki verilənləri proqnozlaşdırmaq üçün istifadə
+edilir?",Recurrent Neural Network (RNN),Autoencoder,Convolutional Neural Network (CNN),Multi-layer Perceptron (MLP),A
+Hangi növ AI modeli daha çox verilənlərə ehtiyac duyur?,Dərin öyrənmə,Süni ümumi intellekt,"Maşın öyrənməsi","Süni dar intellekt",A
+Hangi növ neyron şəbəkəsi şəkil və görüntü işlənməsi üçün daha uygundur?,Recurrent Neural Network (RNN),"Multi-layer Perceptron (MLP)","Convolutional Neural Network (CNN)",Autoencoder,C
+"Hangi növ şəkil sinifləndirmə modelinin təlimində verilənlərin ölçülərinin böyük olması
+vacibdir?","Convolutional Neural Networks (CNN)",Logistic Regression,Decision Trees,Support Vector Machines (SVM),A
+"Hangi texnologiya maşınların daha səmərəli işləməsinə imkan verir?",Maşın öyrənməsi,Dərin öyrənmə,Təbii dil işlənməsi,"Sinir şəbəkələri",B
+"Hangi tipdə maşın öyrənmə verilənlərdən nümunələr və qeyri-nümunələr tapmağa
+çalışır?",Reinforcement learning," Deep learning",Unsupervised learning,Supervised learning,C
+Hansı addım modelin tətbiqi prosesinin başlanğıcıdır?,Modelin inteqrasiya olunması və API-lərlə əlaqəsi,Modelin təlimi,Modelin saxlanması və paylaşılması,"Modelin testi",B
+Hansı AI sahəsi şəkillərin tanınmasında istifadə olunur?,Robototexnika,Təbii dil işlənməsi,"Maşın öyrənməsi",Kompüter vizyonu,D
+Hansı alət süni intellekt modelinin tətbiqini asanlaşdırır və avtomatlaşdırır?,Docker,"TensorFlow",Pandas,Jupyter Notebook,A
+"Hansı metod ""model evaluation"" üçün ən çox istifadə edilir?",Validation Accuracy,"Test Accuracy",Training Loss,Training Accuracy,A
+Hansı növ AI tərtibatı çox qatlı sinir şəbəkələrinə əsaslanır?,Təbii dil işlənməsi,Qrafik şəbəkələr,Dərin öyrənmə,Yüzey öyrənmə,C
+Hansı növ verilənlər sinir şəbəkələrinə daxil edilir?,Verilənlər olmur,Təsadüfi verilənlər,Strukturlaşdırılmış və etiketli verilənlər,Hər cür verilənlər,C
+"Hansı texnologiya modelin tətbiqi zamanı ""containerization"" (konteynerləşdirmə)
+prosesini asanlaşdırır?",Docker,Flask,Kubernetes,MongoDB,A
+Hansı tip öyrənmə modelində maşın yalnız məlumatın təhlilini aparır?,Unsupervised learning,Dərin öyrənmə,Reinforcement learning,Supervised learning,A
+"Hansıl AI sahəsi robotların fiziki hərəkətlərini və mühitlə əlaqəsini öyrədir?","Təbii dil işlənməsi","Maşın öyrənməsi",Süni ümumi intellekt,Robototexnika,D
+Hansıl süni intellekt sahəsi şəkil və videoları emal etməklə məşğul olur?,Robototexnika,"Maşın öyrənməsi",Kompüter vizyonu,"Təbii dil işlənməsi",C
+"Hansıl təkmilləşmiş texnologiya maşınların insan dilini anlamasına və cavab
+verməsinə kömək edir?",Dərin öyrənmə,"Təbii dil işlənməsi (NLP)","Süni sinir şəbəkələri","Kompüter vizyonu",B
+"Image classification üçün verilənlər bazasını hazırlayarkən hansı növ etiketlər
+istifadə olunur?",Bütün qeyd edilənlər,Kategorik etiketlər,"Rəqəmsal etiketlər","Yalnız müsbət və mənfi etiketlər",B
+Image Classification üçün ən çox istifadə olunan sinir şəbəkəsi modeli hansıdır?,Support Vector Machine (SVM),Multi-Layer Perceptron (MLP),"Convolutional Neural Network (CNN)",Recurrent Neural Network (RNN),C
+Intersection over Union (IoU) nəyi ifadə edir?,Aşağı dəqiqlikli obyektləri ölçmək,"Modelin sinifləndirmə dəqiqliyini ölçür","Doğru tanınan obyektlərin sahəsinin cəmi ilə səhv tanınan obyektlərin
+sahəsinin nisbətini göstərir","Obyektin həqiqi yerini və model tərəfindən təxmin edilən yer arasındakı ortaq
+sahəni ölçür",D
+K-fold cross-validation nədir?,Təlim verilənlərinin təhlili,Modelin hər mərhələdə test edilən üsul,Verilənlərin təkrarlanan şəkildə bölünməsi,Verilənləri yalnız təlimləndirən üsu,C
+"K-means alqoritmasında ""K"" necə seçilir?",Yalnız modelin nəticələrinə əsaslanır,"Məlumatların xüsusiyyətlərinə əsaslanır",Təcrübə və tədqiqat əsasında seçilir,Etiketsiz verilənlərlə bağlıdır,C
+"K-means alqoritmasında verilənlər necə qruplaşdırılır?","Verilənlərin sırasına əsaslanaraq","Mesafələrə əsaslanaraq","Etiketlərə əsaslanaraq",Təcrübələrə əsaslanaraq,B
+K-nə qədər sinifli şəkil sinifləndirmə məsələsində nə olmalıdır?,Yalnız K fərqli şəkil növü istifadə olunmalıdır,"Yalnız bir sinif olmalıdır", Çıxış qatında K neyronu olmalıdır,"Çıxış qatında yalnız bir neyron olmalıdır",C
+"Klassifikasiya modelində ""Confusion Matrix"" nəyi göstərir?",Siniflərin sayını,Modelin səhvlərinin ölçülməsi,Verilənlərin təkrarlanmadan işlənməsi,"Hər sinifin doğru və yanlış təsnifatını",D
+Klassifikasiya modelində hansı metrik daha çox informativdir?,F1-Score,"Bütün qeyd edilənlər","Precision və Recall",Mean Absolute Error,B
+Klassifikasiya modelində modelin doğru cavablarını ölçən metrik hansı ola bilər?,Confusion Matrix,Bütün qeyd edilənlər,Sensitivlik,Precision,B
+Klassifikasiya modelində səhvləri ölçmək üçün hansı metod daha əlverişlidir?,R-squared,K-fold Cross-validation,Sensitivlik və Spesifiklik,Mean Squared Error,C
+Klassifikasiya modelində verilənlər necə işlənir?,Yalnız əlamətlərin ölçülməsi ilə işləyir,Verilənlər rəqəmsal olaraq proqnozlaşdırılır,Yalnız təhlil edilən verilənlər ilə işləyir,Verilənlər siniflərə və ya qruplara ayrılır,D
+"Klassifikasiya nəyi ifadə edir?",Hər hansı verilən növünün müqayisəsini,Nömrə təhlilini,"Verilənlərin siniflərə ayrılmasını",Rəqəmsal verilənlərin təhlilini,C
+"Klassifikasiya problemini həll etmək üçün hansı model istifadə olunur?","Dərin öyrənmə",K-means,Logistic reqressiya,Naive Bayes,C
+Klassifikasiya probleminin nəticələrini ölçmək üçün hansı metrikdən istifadə olunur?,Root Mean Squared Error (RMSE),"F1-score",R-squared,Accuracy,D
+KNN (K-nearest neighbors) alqoritması hansı növ verilənlərlə işləyir?,"Yalnız kiçik verilənlərlə", Qeyri-etiketli verilənlərlə,"Yalnız şəkil verilənləri ilə",Yalnız sayısal verilənlərlə,D
+"KNN (K-nearest neighbors) alqoritmasında ""K"" nəyi göstərir?",Məhsulun etiketini,Məhsul növü,"Qonşuların sayını","Sinif sayını",C
+"KNN alqoritmasında ""K"" nəyi göstərir?","Qonşuların sayını",Təcrübə sayı,"Sinifləndirmə dəqiqliyini","Siniflərin sayını",A
+"Komputer görməsi ilə əlaqəli ən məşhur sinir şəbəkəsi modeli hansıdır?"," K-nearest neighbors (KNN)",Convolutional Neural Network (CNN),Multi-layer Perceptron (MLP),Recurrent Neural Network (RNN),B
+"Komputer görməsi nədir?",Məlumatların analizi üçün statistik üsullar,Kompüterlərin şəkil və video məlumatlarını emal edərək anlaya bilməsi,"Sinir şəbəkələrinin əsaslandığı tədqiqat sahəsi","Maşınların insan beynini təqlid etməsi",B
+"Komputer görməsi sahəsində ""semantic segmentation"" nəyi nəzərdə tutur?",Hər bir pikselin etiketini müəyyən etmək,Şəkil ölçüsünü dəyişdirmək,Şəkil üzərində müxtəlif obyektləri müəyyən etmək,Şəkilin yalnız bir hissəsini təhlil etmək,A
+"Komputer görməsində ""bag of words"" modelinə bənzər yanaşma hansı metodda
+istifadə olunur?","Natural Language Processing (NLP)","Object Recognition",Image Classification, Image Clustering,B
+"Komputer görməsində ""CNN"" modelindəki ""kernel"" nəyi ifadə edir?",Şəkildən xüsusiyyət çıxarmaq üçün istifadə olunan alqoritm,Şəkilin ölçüsünü dəyişdirən bir üsul,Şəkilin əsas xüsusiyyətlərini təyin edən mətn,"Konvolusiya əməliyyatını həyata keçirən bir filtir",D
+"Komputer görməsində ""color histograms"" nəyi göstərir?","Şəkilin istifadə edilə bilən təhlil nəticələrini göstərmək","Şəkilin ölçüsünü dəyişdirmək",Şəkilin kontrastını artırmaq,"Şəkilin hər bir pikselindəki rəngləri ölçmək",D
+"Komputer görməsində ""convolution"" əməliyyatı hansı məqsəd güdür?",Şəkillərdən xüsusiyyətlər çıxarmaq,"Sinifləndirmə və etiketləmə",Hər hansı bir obrazı çoxaltmaq,"Şəkillərin ölçülərini artırmaq",A
+"Komputer görməsində ""feature extraction"" nədir?",Şəkilin daha kiçik ölçüdə təhlil edilməsi,Şəkil məlumatlarının şəkil formatına çevrilməsi,Şəkillərdəki daha az əhəmiyyətli xüsusiyyətləri seçmək,Şəkillərdəki ən əhəmiyyətli xüsusiyyətləri çıxarmaq,C
+"Komputer görməsində ""image denoising"" nədir?",Şəkildəki səs-küyü azaltmaq,Şəkilin rəngini dəyişdirmək,Şəkilin kontrastını artırmaq,Şəkilin ölçüsünü artırmaq,A
+"Komputer görməsində ""object detection"" nəyi ifadə edir?","Şəkillərdəki obyektlərin sayı və növünü tapmaq","Şəkil ölçülərini dəyişdirmək",Şəkillərin mövqeyini dəyişdirmək,Şəkillərdəki rəngləri dəyişdirmək,A
+"Komputer görməsində ""transfer learning"" necə işləyir?",Yalnız böyük verilənlərlə işləmək,Yalnız şəkillərin ölçüsünü dəyişdirmək,"Sinir şəbəkəsinin sayını artırmaq",Yeni verilənlərlə təlim olunmuş modeli digər sahələrə tətbiq etmək,D
+Komputer görməsində hansı metod şəkillərin məkanını təhlil etməyə kömək edir?,Recurrent networks,Convolution,K-means clustering,Decision Trees,B
+"Komputer görməsində hansı növ şəkil tətbiqləri istifadə edilir?",3D şəkillər,Zamanla dəyişən şəkillər (video),2D şəkillər,Bütün qeyd edilənlər,D
+"Komputer görməsindəki ""image classification"" nəyi ifadə edir?",Şəkillərin etiketlənməsi və siniflərə ayrılması,Şəkillərin ölçülərinin ölçülməsi,Şəkillərin təhlilinə dair statistik analizlər,Şəkillərdən xüsusiyyətlərin çıxarılması,A
+Linear regressiya nə üçün istifadə olunur?,Verilənlərin iki sinifi arasında əlaqə tapmaq,"Məlumatları etiketləndirmək",Xətti əlaqəni modelləşdirmək,"Çox qatlı şəbəkələr qurmaq",C
+Lineyar reqressiya hansı məqsəd üçün istifadə olunur?,Verilənlər arasındakı əlaqəni modelləşdirmək,Verilənləri sinifləndirmək,Qeyri-xətti verilənləri proqnozlaşdırmaq,Kategorik verilənləri təhlil etmək,A
+Lineyar reqressiya ilə hansı cür əlaqələr modelləşdirilir?,"Qeyri-xətti əlaqələr","Xətti əlaqələr","Siniflər arası əlaqələr",Zamanla dəyişən əlaqələr,B
+Logistic reqressiya hansı növ problemlər üçün uyğundur?,Zamanla dəyişən proqnozlar,Xətti əlaqələr,Verilənləri ölçmə,Sinifləndirmə problemləri,D
+Logistic reqressiya modelində nəyə diqqət yetirilir?,Sinifləndirmə və ehtimalların hesablanması,Verilənlərin rəqəmsal uyğunluğu,Yalnız səhvlərin analiz,Xətti əlaqə,A
+"Maşın öyrənməsi hansı növ verilənlərdən istifadə edir?",Yalnız mətndən istifadə edir,Strukturlaşdırılmış verilənlər,Təkcə şəkil və videolar,Strukturlaşdırılmamış verilənlər,B
+Maşın öyrənməsi hansı növ verilənlərə əsaslanır?,Sözlü verilənlər,Etiketsiz verilənlər,Yalnız təsadüfi verilənlər,"Strukturlaşdırılmış verilənlər",D
+"Maşın öyrənməsi ilə əlaqəli hansı mənbə verilənlərdən öyrənir?",Məlumatlar və ya təcrübə,Yalnız təbii verilənlər,Yalnız kitablar,Təsadüfi verilənlər,A
+"Maşın öyrənməsi tətbiqlərində ""transfer learning"" nəyi ifadə edir?",Məlumatları təkrarlamaq,Sinir şəbəkələrində dəyişikliklər etmək,Yalnız yeni məlumatlarla öyrənmək,Mövcud modelin digər sahələrdə istifadə edilməsi,D
+"Maşın öyrənməsində ""bias"" nəyi ifadə edir?",Modelin verilənlərə uyğunsuzluğu,Modelin təcrübəsizliyi,Modelin daha çox öyrənməsi,Modelin yalnız müəyyən verilənlərlə işləməsi,A
+"Maşın öyrənməsində ""overfitting"" nəyi ifadə edir?",Modelin verilənlərə çox yaxşı uyğunlaşması,Modelin verilənlərə düzgün uyğunlaşmaması,Modelin çox az verilənlə işləməsi,Modelin çox yavaş öyrənməsi,A
+"Maşın öyrənməsində ""precision"" nəyi ölçür?",Modelin səhvlərini,Düzgün nəticələrinin sayın,Siniflərin sayını,Modelin ümumi doğruluğunu,B
+"Maşın öyrənməsində ""regularization"" nədir?",Modelin öyrənmə sürətini artırmaq,Verilənlərin saxlanmasını təmin etmək,Modelin təkrarlanmadan işləməsini təmin etmək,Modelin daha yaxşı nəticələr verməsi üçün dəyişikliklər etmək,D
+"Maşın öyrənməsində ""underfitting"" nəyi ifadə edir?",Modelin heç bir nəticə verməməsi,Modelin verilənlərə çox yaxşı uyğunlaşması,Modelin həddindən artıq sadələşdirilməsi,Modelin verilənlərə uyğun gəlməməsi,D
+Maşın öyrənməsində hansı növ verilənlər daha çox istifadə olunur?,Etiketsiz verilənlər,Strukturlaşdırılmış verilənlər,Təsadüfi verilənlər,Hər hansı verilənlər,B
+Maşın öyrənməsinin effektivliyini artırmaq üçün nə etmək lazımdır?,Yalnız çox məlumatdan istifadə etmək,Yalnız yüksək keyfiyyətli verilənlərlə işləmək,Yalnız bir tip model istifadə etmək,Verilənləri düzgün təhlil etmək,D
+Maşın öyrənməsinin tətbiq olunduğu sahələrdən biri hansıdır?,Tibbi diaqnoz və müalicə,Yalnız təbii elmlər,Yalnız əyləncə sənayesi,Yalnız təhsil,A
+"Maşın təlimində ""feature engineering"" nəyi ifadə edir?",Verilənlərin təhlili,Məlumatların tərtib olunması,Yalnız verilənlərin təkmilləşdirilməsi,Verilənlərdən xüsusiyyət çıxarma,D
+"Maşın təlimində ""loss function"" nədir?",Modelin səhvlərinin ölçülməsi, Siniflər arasında əlaqənin tapılması,Mükafatların hesablanması,Verilənlərin sıralanması,A
+Maşın təlimində əsas məqsəd nədir?,İnsanlara məlumat vermək,Unsupervised learning,Verilənləri saxlamaq,Yalnız təcrübələr aparmaq,B
+"Maşınların əvvəlcədən yazılmış qaydalara əsaslanmadan öyrənməsini təmin edən
+yanaşma hansıdır?",Reinforcement learning,Unsupervised learning,Supervised learning,Qrafiklər,B
+MNIST verilənlər bazası hansı növ şəkilləri ehtiva edir?,Hər hansı bir obyektin şəkilləri,Əllə yazılmış rəqəmlər,İnsan üzləri,Bitki şəkilləri,B
+"Model tətbiqində ""batch processing"" nəyi ifadə edir?",Modelin yalnız test verilənləri ilə işlənməsi,Verilənlərin hamısının bir anda işlənməsi,Verilənlərin kiçik hissələrə bölünüb işlənməsi,Modelin yalnız bir dəfə işlənməsi,C
+Model tətbiqində API (Application Programming Interface) nə üçün istifadə olunur?,Modelin optimallaşdırılmasını təmin etmək,Modelin digər tətbiqlərlə əlaqə qurmasına və məlumat mübadiləsi etməsinə imkan vermək,Modelin ölçülərini dəyişdirmək,Modelin təlimini asanlaşdırmaq,A
+"Modelin ""test set"" ilə yoxlanması nə üçün vacibdir?",Modelin yalnız ən yaxşı nəticələri göstərməsi üçün,Sadəcə nəticə göstərmək,Yalnız verilənlərin doğruluğunu təmin etmək,Modelin yeni verilənlər üzərində necə işlədiyini qiymətləndirmək,D
+Modelin doğruluğunu artırmaq üçün hansı üsul istifadə olunur?,Yalnız verilənləri artırmaq,Verilənlərin normalizasiyası və təmizlənməsi,Modelin sayını artırmaq,Etiketsiz verilənlərlə işləmək,B
+Modelin doğruluğunu qiymətləndirmək üçün hansı metoddan istifadə olunur?,Cross-validation,Gradient descent,Regularization,Sinir şəbəkələri,A
+Modelin düzgün işləməsini təmin etmək üçün nə lazımdır?,Təkrar məlumatları istifadə etmək,Yalnız böyük verilənlərlə işləmək,Verilənlərin düzgün təhlilini aparmaq,"Modelləri təkrarlamaq",C
+Modelin öyrənmə keyfiyyətini artıran texnologiya hansıdır?,Verilənlərin etiketi,Sinifləndirmə,Dərin öyrənmə,Təbii dil işlənməsi,C
+Modelin səhvini ölçmək üçün hansı metrik istifadə olunur?,Precision,Learning rate,Accuracy,Recall,C
+Modelin təlimi üçün verilənləri necə hazırlamaq lazımdır?,"Verilənləri düzgün şəkildə təhlil edib, təmizləmək",Verilənləri təsadüfi şəkildə seçmək,Verilənlər yalnız təkrarlamaq,Yalnız məlumatları daxil etmək,A
+Modelin təliminə başlamadan əvvəl verilənlər necə hazırlanır?,Bütün qeyd edilənlər,Verilənlər üçün uyğun etiketlər təyin edilir,Verilənlər normalizə edilir və qruplaşdırılır,Verilənlər sıralanır və təhlil edilir,A
+Modelin tətbiqi üçün hansı dil və çərçivələrdən istifadə edilə bilər?,"JavaScript, HTML, CSS","C++, Assembly","SQL, MongoDB","Python, TensorFlow, PyTorch",D
+"Modelin tətbiqi zamanı ""real-time processing"" nəyi ifadə edir?",Modelin təlimi zamanı nəticə təqdim etməsi,Modelin verilənləri anında qəbul edib emal etməsi,Verilənlərin öncədən işlənməsi,Modelin yalnız məlumatın sonunda nəticə verməsi,B
+"Modelin tətbiqi zamanı ""scalability"" nəyi ifadə edir?",Modelin daha çox verilənlərlə işləyə bilməsi,Modelin ölçüsünü azaltmaq,Modelin performansının artırılması,Modelin yalnız kiçik verilənlərlə işləməsi,A
+"Modelin tətbiqində ""serverless architecture"" nəyi ifadə edir?",Serverlərin olmaması və avtomatik olaraq resursların təyin edilməsi,Serverlərin daha sürətli işləməsi,Serverlərin yalnız testdən sonra işə salınması,Serverlər olmadan modelin işləməsi,A
+Modelin tətbiqində hansı metodla istifadəçi təcrübəsi yaxşılaşdırılır?,Verilənlərin yalnız bir hissəsini istifadə etmək,Modelin tamamilə test edilməməsi,Yalnız modelin təliminə diqqət yetirmək,API-lərin sürətli işləməsi və optimallaşdırılması,D
+Modelin tətbiqində hansı mühitlər istifadə olunur?,Bulud mühiti,Lokal serverlər,On-premise mühitlər,Bütün qeyd edilənlər,D
+Modelin tətbiqindən sonra hansı addımlar daha çox vacibdir?,Modelin real dünyada işləyərkən səhvləri izləmək və düzəltmək,Modelin yalnız test verilənləri ilə işləməsi,Modelin təlim verilənləri ilə daha yaxşı performans göstərməsi,Modelin daha yavaş işləməsi,A
+Modelin tətbiqindən sonra hansı məsələlər tez-tez yaranır?,Modelin yeni verilənlərlə uyğunlaşmaması,Modelin təlimindəki səhvlər,Modelin performansının azalması,Bütün qeyd edilənlər,D
+Modelin tətbiqini izləmək üçün hansı alətlər istifadə olunur?,Prometheus,TensorBoard,Bütün qeyd edilənlər,Grafana,C
+Modelin tətbiqinin avtomatlaşdırılması üçün hansı alətləri istifadə edə bilərik?,GitHub,Bütün qeyd edilənlər,Docker,Jenkins,B
+"Modelin tətbiqinə başlamadan əvvəl hansı mərhələlər yerinə yetirilməlidir?",Modelin təlimi,Bütün qeyd edilənlər,Modelin optimallaşdırılması və yığılması,Mühitə uyğunlaşdırılması (environment setup),B
+Multi-class klassifikasiya hansı vəziyyətdə istifadə olunur?,Yalnız bir sinifin olması,Yalnız iki sinifin olması,Hər hansı verilənlərlə işləmək,Bir neçə sinifin olması,D
+Naive Bayes hansı cür verilənlər üçün uyğundur?,Zamanla dəyişən verilənlər,Şəkil verilənləri,Kategorik verilənlər,Rəqəmsal verilənlər,C
+"Neural network modelində ""activation function"" nəyi təmin edir?",Sinir şəbəkələrinin əməliyyatını təkmilləşdirmək,Modelin səhvlərini azaltmaq,Modelin nəticələrini artırmaq,Modelin çox qatlı olmasını təmin etmək,A
+"Neural Network-də ""activation function"" hansı məqsəd üçün istifadə olunur?",Modelin səhvlərini ölçmək,Sinir hüceyrələrinin təsirini idarə etmək,Çıxışın normalizasiyası,Yalnız qeyri-xətti əlaqə tapmaq,B
+"Neural Network-də ""forward pass"" nəyi göstərir?",Modelin səhvlərinin hesablanmas,Modelin optimallaşdırılması,Parametrlərin təkrarlanması,Verilənlərin modelə daxil edilməsi və çıxışın alınması,D
+"Neural Network-də ""weight"" nəyi ifadə edir?",Çıxış funksiyasının tətbiqini,Hər bir sinir hüceyrəsinin gücü,Qatlar arasındakı əlaqəni,Sinir şəbəkəsinin ən böyük parametrini,C
+Neural Network-də hansı üsul modelin təlimində məlumatların artırılmasını təmin edir?,K-fold Cross Validation,Early Stopping,Data Augmentation,Dropout,C
+"Neyron şəbəkələrində ""aktivasiya funksiyası"" nə edir?",Təlim verilənlərinin ölçülməsini təmin edir,Modelin təhlilini təmin edir,Verilənlərin etiketlənməsini təmin edir,Neyronun çıxışını təyin edir,D
+"Neyron şəbəkələrində ""backpropagation"" nədir?",Modelin ilkin parametrlərini dəyişdirmək,Çıxış səhvini geri yaymaq və çəkiləri optimallaşdırmaq,Sinir hüceyrələrinin inkişafını təmin etmək,Yalnız verilənləri təhlil etmək,B
+"Neyron şəbəkələrində ""epoch"" nədir?",Çıxış funksiyasının dəyişməsi,Bir neçə sinir şəbəkəsinin bir araya gəlməsi,Yalnız bir sinir hüceyrəsinin təkrarlanması,Bir təlim dövründə verilənlərin hamısı üzərində bir neçə dəfə işləmək,D
+"Neyron şəbəkələrində aktivasiya funksiyasının ""ReLU"" olmasının əsas faydası nədir?","Həm müsbət, həm də mənfi nəticələri təmin etmək",Yalnız sıfırla müsbət nəticələr vermək,Sadə və effektli xətti əlaqə qurmaq,Çox sürətli təlim və böyük verilənlərlə işləmək,D
+"Neyron şəbəkələrindəki ""feedforward"" nəyi ifadə edir?",Sinir hüceyrələrinin qidalanması,Verilənlərin qatlar arasında birbaşa keçidi,Modelin təlim zamanı dəyişməsi,Sinir şəbəkəsinin şəbəkə daxilində keçməsi,B
+Neyron şəbəkələrində istifadə edilən ən məşhur aktivasiya funksiyası hansıdır?,Bütün qeyd edilənlər,ReLU,Sigmoid,Tanh,A
+"Neyron şəbəkələrindəki ""Layer"" nəyi ifadə edir?",Sinir hüceyrələrinin hər bir qrupunu,Yalnız parametrləri,Verilənlərin təmizlənməsini,Çıxış funksiyasını,A
+Neyron şəbəkələrinin təlimində hansı üsul daha tez-tez istifadə olunur?,Random Forest,Adam optimizer,Support Vector Machine,K-means,B
+"Neyron şəbəkəsində ""dropout"" nə məqsədi güdür",Modelin overfitting (həddindən artıq uyğunlaşmA. problemini azaltmaq,Yalnız etiketlər üzərində işləmək,Modelin daha sürətli öyrənməsini təmin etmək,Hər bir sinir hüceyrəsini növbə ilə deaktiv etmək,A
+Neyron şəbəkəsinin qatları nəyə xidmət edir?,Yalnız nəticəni göstərmək,Verilənləri sadələşdirmək,Verilənlərə aktivasiya funksiyasını tətbiq etmək,Sinir hüceyrələrinin əlaqələrini idarə etmək,D
+Neyron şəbəkəsinin əsas elementi hansıdır?,Qeyri-xətti əlaqələr,Düyünlər və qatlar,Çıxış funksiyaları,Sinir hüceyrələri,B
+"Object Detection modelində ""bounding box"" nəyi göstərir?",Obyektin təbii ölçülərini göstərən qutu,Obyektin sinifini müəyyən edən qutu,Obyektin şəkildən çıxarılması üçün istifadə olunan qutu,Obyektin rəngini,C
+"Object Detection modelində ""multi-class detection"" nəyi ifadə edir?",Yalnız bir sinif üzərində obyekt aşkarlamaq,Obyektin ətrafındakı konturları tapmaq,Bir şəkil üzərində bir neçə fərqli sinifin obyektlərini aşkarlamaq,Eyni sinifə aid obyektləri təhlil etmək,C
+Object Detection nədir?,Şəkillərdə və videolarda obyektlərin mövqeyini və növünü müəyyən etmək,Verilənləri təhlil etmək,Şəkilləri sinifləndirmək,Şəkillərdəki pikselləri dəyişdirmək,A
+"Object Detection-də ""anchor boxes"" nəyi ifadə edir?",Modelin təlimini optimallaşdırmaq üçün istifadə edilən qutular,Hər bir obyekt üçün təxmin edilən ilkin qutular,Obyektin ölçüsünü dəyişdirən qutular,Obyektin tipini müəyyən edən qutular,B
+"Object Detection-də ""true positive"" nəyi göstərir?",Yalnız səhv təhlil edilmiş obyektlər,Modelin təlim verilənlərindəki səhvlər,Doğru təsnif edilmiş obyektlər,Modelin təlim prosesində səhvləri,C
+Object Detection-də hansı metodla obyektlərin növü və yerini müəyyən etmək mümkündür?,Softmax activation,Feature extraction,Region proposal,Convolutional layers,C
+Object Detection-də ən çox istifadə olunan sinir şəbəkəsi modeli hansıdır?,Support Vector Machine (SVM),Recurrent Neural Network (RNN),YOLO (You Only Look Once),Convolutional Neural Network (CNN,C
+Proqnozlaşdırma modelinin düzgün işləməsi üçün hansı elementlərə diqqət yetirilməlidir?,Yalnız verilənlərin növü,Modelin quruluşuna,Yalnız etiketlərə,Təlim və test verilənlərinin balansı,D
+PyTorch nədir?,Veb inkişaf üçün istifadə olunan alətdir,Cəbr hesablama üçün istifadə olunan proqramdır,Maşın öyrənməsi kitabxanasıdır,Şəkil redaktə etmək üçün istifadə olunur,C
+"PyTorch-da ""backpropagation"" nəyi ifadə edir?",Sinir şəbəkələrinin optimallaşdırılmasını,Modelin səhvlərini geri yaymaq və çəkiləri yeniləmək,Verilənlərin testdən keçməsi,Çıxış funksiyasını təyin etmək,B
+"PyTorch-da ""batch size"" nəyi ifadə edir?",Verilənlərin təhlilinin sürətini,Modelin təlim verilənlərinin sayını,Modelin çıxışını təyin edən ölçü,Verilənlərdəki hər bir qeydin ölçüsü,B
+"PyTorch-da ""DataLoader"" nədir?",Modelin çıxışını təhlil etmək,Verilənləri daha sürətli yükləmək və qruplaşdırmaq üçün istifadə olunur,Modelin təlim verilənlərini təmin etmək,Verilənlərin etiketlərini saxlamaq,B
+"PyTorch-da ""DataLoader"" nədir?",Modelin ölçülərini dəyişdirmək,Verilənləri saxlamaq üçün verilənlər bazası,Verilənlərin modelə düzgün şəkildə ötürülməsi üçün alət,Modelin optimallaşdırılması üçün metod,C
+"PyTorch-da ""forward pass"" nədir?",Modelin təlimi üçün verilənlərin ötürülməsidir,Modelin çıxışının ölçülməsidir,Modelin təhlil edilməsidir,Modelin ağırlıqlarının təyin edilməsidir,A
+"PyTorch-da ""GPU"" üzərində hesablama aparmaq üçün hansı əməliyyatı yerinə yetirməliyik?",model.cuda(),model.to(device),model.compile(),model.gpu(),B
+"PyTorch-da ""loss function"" nədir?",Modelin təhlil funksiyası,Modelin təlimində istifadə olunan səhv funksiyası,Modelin təkmilləşdirilməsinə kömək edən funksiya,Modelin qiymətləndirmə metrikası,B
+"PyTorch-da ""Tensor"" nəyi ifadə edir?",Verilənləri saxlamaq üçün massivlər,Xətti əlaqələr üçün modeL,Sinir şəbəkələrinin aktivasiya funksiyası,Modelin optimallaşdırılması,A
+PyTorch-da bir tensorun ölçüsünü necə öyrənə bilərik?,tensor.shape,tensor.dim(),Bütün qeyd edilənlər,tensor.size(),C
+PyTorch-da hansı funksiya verilənləri sıralamağı təmin edir?,torch.sort(),torch.index(),torch.rank(),torch.stack(),A
+PyTorch-da hansı funksiyalarla modelin qiymətləndirmə rejimini dəyişdirə bilərik?,model.compile(),model.fit(),model.train() və model.eval(),model.validate(),C
+PyTorch-da hansı metod modelin optimallaşdırılmasını təmin edir?,model.train(),model.optimize(),optimizer.step(),model.validate(),C
+PyTorch-da hansı metodla tensoru CPU-dan GPU-ya köçürmək olar?,.cuda(),.to(device),.transfer(),.gpu(),B
+PyTorch-da hansı optimizasiya alqoritması daha çox istifadə olunur?,RMSprop,SGD (Stochastic Gradient Descent),Adam,Bütün qeyd edilənlər,D
+PyTorch-da modelin təliminə başlamadan əvvəl hansı funksiyanı çağırmaq lazımdır?,model.fit(),model.compile(),model.eval(),model.train(),D
+"PyTorch-da sinir şəbəkələrində ""dropout"" nədir?",Sinir hüceyrələrinin təsadüfi olaraq deaktiv edilməsi,Modelin optimallaşdırılması,Sinir hüceyrələrinin ölçüsünü artırmaq,Modelin ölçüsünü artırmaq,A
+PyTorch-da şəkil sinifləndirmə modelində torchvision nə üçün istifadə olunur?,Modelin optimallaşdırılmasını təmin etmək,Şəkil ölçülərini dəyişdirmək,CNN modellərini tətbiq etmək və verilənlər bazasına daxil olmaq,Şəkil formatlarını dəyişdirmək,C
+PyTorch-da torch.autograd nə üçün istifadə olunur?,Tensorları hesablamaq,Cəbr əməliyyatlarını avtomatik olaraq fərqləndirmək,Modelin performansını ölçmək,Modelin yaddaşını optimallaşdırmaq,B
+PyTorch-da torch.autograd nə üçün istifadə olunur?,Tensorların əməliyyatlarını idarə etmək,Modelin optimallaşdırılması,Modelin əlamətlərini saxlamaq,Fərqləndirmə və geri yayılma üçün avtomatik alət,D
+PyTorch-da torch.load funksiyası ilə hansı əməliyyat həyata keçirilir?,Modelin çıxışını yükləmək, Modelin təlimi üçün yeni verilənlər yükləmək,Yaddaşda saxlanılan modelin çəkilərini yükləmək,Tensorları diskdən yükləmək,C
+PyTorch-da torch.nn nədir?,Şəkil emalı üçün alət,Sinir şəbəkələrinin qurulması üçün modullar,Rəqəmsal verilənlərin təhlili üçün alət,Verilənlər bazası əməliyyatları üçün modul,B
+PyTorch-da torch.nn.CrossEntropyLoss nə üçün istifadə olunur?,Modelin optimallaşdırılması üçün funksiyadır,Regressiya problemləri üçün itki funksiyası,Aktivasiya funksiyasıdır,Sinifləndirmə problemləri üçün itki funksiyası,D
+PyTorch-da torch.nn.functional nədir?,Sinir şəbəkəsi üçün məlumat təhlili funksiyaları,Sinir şəbəkəsi üçün xüsusi aktivasiya funksiyaları və digər əməliyyatlar,Verilənlər bazası üçün metodlar,Modelin təlimini təmin edən funksiyalar,B
+PyTorch-da torch.nn.Linear nədir?,Xətti regresiya funksiyasıdır,"Sinir şəbəkəsi qatıdır, xətti əlaqəni təmsil edir",Sinir şəbəkəsinin optimallaşdırılmasını təmin edir,Tensorları işlətmək üçün funksiyadır,B
+PyTorch-da torch.nn.Module nədir?,Qrafik vizualizasiya üçün modul,Verilənlərin təhlili üçün modul,Sinir şəbəkəsi üçün əsas sinif,Tensorların əməliyyatları üçün sinif,C
+PyTorch-da torch.optim nə üçün istifadə olunur?,Modelin öyrənmə sürətini tənzimləmək,Modelin çəkilərini optimallaşdırmaq,Təlim verilənlərini optimallaşdırmaq,Tensorları avtomatik olaraq hesablamaq,B
+PyTorch-da torch.save funksiyası nə üçün istifadə olunur?,Modelin nəticələrini təhlil etmək,Modelin təlimini dayandırmaq,Verilənlər bazasına məlumat yazmaq, Modelin çəkilərini və parametrlərini yaddaşa saxlamaq,D
+"PyTorch-da torch.Tensor obyektinin ""device"" nəyi ifadə edir?",Tensorun CPU və ya GPU-da işləyəcəyini təyin edi,Tensorun ölçüsünü təyin edir,Tensorun məlumat tipini təyin edir,Tensorun hansı növ verilənlə işləyəcəyini müəyyən edir,A
+PyTorch-da torch.Tensor obyektinin əsas məlumat tipi nədir?,List,Python dictionary,NumPy array,Pandas DataFrame,C
+PyTorch-da torch.Tensor və torch.cuda.Tensor arasındakı fərq nədir?,"torch.Tensor CPU, torch.cuda.Tensor isə GPU ilə işləyir",Hər ikisi yalnız CPU-da işləyir,torch.Tensor daha sürətlidir,torch.cuda.Tensor daha sürətlidir,A
+PyTorch-un əsas komponentlərindən biri hansıdır?,Vector,Table,Tensor,Matrix,C
+Qeyd olunanlardan hansı neyron şəbəkəsi modelində ardıcıl verilənlərlə işləyir?,Deep Belief Network (DBN),Convolutional Neural Network (CNN),Recurrent Neural Network (RNN),Multi-layer Perceptron (MLP),C
+Qeyri-xətti əlaqələri öyrənmək üçün hansı modeldən istifadə olunur?,KNN,Logistic regressiya,Xətti regressiya,Dərin öyrənmə,D
+R-CNN (Region-based Convolutional Neural Network) metodunda hansı əsas addım istifadə olunur?,Bütün şəkli bir dəfə təhlil etmək,Şəkilin yalnız ölçülərini təhlil etmək,"Mümkün olan obyekt sahələrini müəyyən edib, hər sahəni ayrıca təhlil etmək",Modelin çəkilərini optimallaşdırmaq,C
+Random Forest alqoritmasında hansı xüsusiyyət istifadə olunur?,Kategorik verilənlərə əsaslanmaq,Birləşmiş ağaclar ilə daha dəqiq nəticə əldə etmək,Nömrə əsasında proqnozlaşdırmaq,Yalnız bir ağacdan istifadə etmək,B
+Random Forest modelinin üstünlüyü nədir?,Bir neçə ağacla daha dəqiq nəticələr əldə edilir,Sadə alqoritmalarla işləyir,Yalnız bir ağacla işləyir,Yalnız struktursuz verilənlərlə işləyir,A
+Regressiya modelində verilənlərin proqnozlaşdırılması üçün hansı ölçü istifadə olunur?,Accuracy,Mean Squared Error (MSE),Log-loss,Recall,B
+Reinforcement learning-də model necə öyrənir?,Təcrübə və səhvlərdən istifadə etməklə,Cəzalar və mükafatlar əsasında,Qeyri-müəyyən məlumatları istifadə edərək,Yalnız məlumatları təkrarlayaraq,B
+Reqressiya modelində hansı tip verilənlər əsasən istifadə olunur?,Qeyri-strukturlaşdırılmış verilənlə,Rəqəmsal və davamlı verilənlər,Sinifləndirilmiş verilənlər,Etiketsiz verilənlər,B
+Reqressiya modelində əhəmiyyətli dəyişənləri seçmək üçün hansı üsuldan istifadə olunur?,Random Forest,Feature selection,Clustering,Model normalization,B
+Reqressiya nədir?,Verilənlərin sinifləndirilməsi,Verilənlərdəki qeyri-müəyyənliyi ölçmək,Verilənlərin ölçülməsi,Nömrələrin və ya rəqəmsal verilənlərin proqnozlaşdırılması,D
+Reqressiya və klassifikasiya arasındakı əsas fərq nədir?,Reqressiya və klassifikasiya arasında heç bir fərq yoxdur,"Reqressiya yalnız təlimləndirici verilənlərə əsaslanır, klassifikasiya isə yalnız test verilənləri ilə işləyir","Reqressiyada yalnız rəqəmsal verilənlər, klassifikasiyada isə yalnız etiketli verilənlər istifadə olunur","Reqressiyada siniflər müəyyən edilir, klassifikasiyada isə davamlı verilənlər",C
+RetinaNet modelinin ən mühüm xüsusiyyəti nədir?,"Obyekt aşkarlanmasında ""focal loss"" funksiyasından istifadə edir",Obyekt aşkarlanmasını yalnız sadə sinifləndirmə üsulu ilə həyata keçirir,"""YOLO"" modelindən daha sürətlidir",Modelin ağırlıqlarını tamamilə sıfırdan öyrədir,A
+Softmax funksiyası hansı məqsəd üçün istifadə olunur?,Şəkil ölçülərini dəyişdirmək,Şəbəkənin səhvini hesablamaq,Sinifləndirmə problemlərində ehtimalları hesablamaq,Tensorları optimize etmək,C
+Süni intellekt (AI) nəyi təqlid edir?,İnsan duyğularını,İnsan bədənini,Insanla əlaqə qurmağı,İnsan davranışlarını və düşüncələrini,D
+Süni intellekt aviasiya sektorunda hansı əsas texnologiyaları təkmilləşdirir?,Pilot təlimini azaldır,Yalnız uçuş qiymətlərini azaldır,İzləmə və təhlükəsizlik texnologiyaları,Təyyarə dizaynını dəyişdirir,C
+Süni intellekt hansı aviasiya xidmətləri üçün effektivdir?,Sərnişin məlumatlarının təhlili və xidmətlərin şəxsiləşdirilməsi,Təyyarə təmirinin avtomatlaşdırılması,Avtomatik uçuş marşrut planlaşdırılması,Bütün qeyd edilənlər,D
+"Süni intellekt hansı xüsusiyyətə sahib olmalıdır ki, insanla qarşılıqlı əlaqə qura bilsin?",Fiziki güc,Təlim verilən məlumat,Heç birini,Duyğusal zəkası,D
+Süni intellekt hava limanlarında hansı sahədə tətbiq olunur?,Hava limanında təhlükəsizlik yoxlamalarının tamamilə avtomatlaşdırılması,Uçuş məlumatlarının təhlili və optimallaşdırılması,Hava limanı dizaynının dəyişdirilməsi,Hava limanında avtomatik restoran xidmətləri,A
+Süni intellekt modelinin tətbiqi (deployment) nəyi ifadə edir?,Modelin optimallaşdırılması,Modelin təlim verilməsi,Modelin test edilməsi,Modelin real dünya tətbiqində istifadəyə verilməsi,D
+"Süni intellekt modelinin tətbiqi zamanı ""monitoring"" nədir?",Modelin vizualizasiyası,Modelin optimallaşdırılması,Modelin yalnız testdən keçməsi,Modelin performansının izlənməsi və real dünya verilənləri ilə qarşılaşdırılması,D
+"Süni intellekt modelinin tətbiqində ""continuous integration"" (CI) nəyi ifadə edir?",Modelin yalnız bir dəfə tətbiq edilməs,Modelin inkişaf etdirildikcə müntəzəm olaraq sınaqdan keçirilməsi və yenilənməsi,Modelin test edilməməsi,Modelin real vaxt rejimində təlim edilməsi,B
+"Süni intellekt modelinin tətbiqində ""data privacy"" və ""data security"" məsələləri niyə vacibdir?",Çünki modelin sınaqdan keçməsi tələb olunmur,Verilənlərin qorunması və istifadəçilərin məxfiliyinin təmin edilməsi üçün,Yalnız verilənlər bazasının ölçüsünü artırmaq üçün,Modelin daha sürətli işləməsi üçün,B
+"Süni intellekt modelinin tətbiqindən sonra ""model retraining"" nə zaman lazımdır?",Modelin performansı düşəndə və ya verilənlərdə dəyişiklik baş verdikdə,Modelin tətbiqi tamamlandıqda,Modelin heç vaxt retraining-ə ehtiyacı yoxdur,Modelin ilkin təlimindən sonra,A
+Süni intellekt modellərinin tətbiqi zamanı hansı xidmətlər ən çox istifadə olunur?,"MySQL, PostgreSQL","Photoshop, Illustrator","AWS, Azure, Google Cloud","Excel, PowerPoint",C
+"Süni intellekt modellərinin tətbiqində ""load balancing"" nəyi ifadə edir?",Modelin optimallaşdırılması,Şəbəkə trafikinin bərabər şəkildə bölünməsi,Modelin çəkilərinin yığılması,Modelin təlimindəki səhvlərin azaldılması,B
+Süni intellekt sistemləri üçün məlumatın keyfiyyəti niyə çox vacibdir?,Daha yaxşı nəticələr verir,Yalnız sürətli öyrənmə təmin edir,Daha yüksək sürət təmin edir,Məlumatın ölçüsü artır,A
+Süni intellekt uçuş zamanı hansı məlumatları real vaxtda təhlil edərək təyyarənin idarə edilməsinə kömək edir?,Təyyarə dizaynı,Yalnız sərnişinlərin məlumatları,Uçuş marşrutu və hava şəraiti,Sərnişinlərin ehtiyacları,C
+"Süni intellektdə ""overfitting"" nə deməkdir?",Modelin verilənlərə uyğunsuzluğu,"Modelin çox təcrübə etməsi",Modelin verilənləri çox yaxşı uyğunlaşdırması,Modelin yalnız müəyyən verilənlərlə işləməsi,C
+Süni intellektdə verilənlərdən naxış tapmağa nə ad verilir?,Məlumat analizi,Klasterləşdirmə,Sinifləndirmə,Proqnozlaşdırma,B
+Süni intellektin aviasiya sahəsində tətbiqi nəticəsində hansı fayda əldə edilə bilər?,Təyyarə uçuşlarını daha sürətli etmək,Yalnız sərnişinlərin xidmətini yaxşılaşdırmaq,Uçuşlarda daha çox sərnişin qəbulu,Uçuş təhlükəsizliyinin və səmərəliliyinin artırılması,D
+Süni intellektin aviasiya sahəsində tətbiqi üçün hansı sahələrdə dəstək verən məlumat bazaları mövcuddur?,Uçuş məlumatları,Sərnişin məlumatları,Bütün qeyd edilənlər,Hava şəraiti məlumatları,C
+Süni intellektin aviasiya sahəsindəki əsas çətinlikləri hansılardır?,Aviasiya texnologiyalarının hələ də inkişaf etməməsi,Avtomatlaşdırma ilə əlaqəli yüksək maliyyətlər,Təhlükəsizlik və məlumatların qorunması məsələləri,Yalnız pilotların öyrədilməsi,C
+Süni intellektin aviasiya sahəsindəki əsas istifadəsi hansıdır?,Aviasiya bilet satışlarını artırmaq,Yalnız uçuş təhlili,Yalnız hava limanı təhlükəsizliyi,Avtomatlaşdırılmış təyyarə idarəetməsi və pilot dəstəyi,D
+Süni intellektin aviasiya sektorunda inkişafı ilə bağlı hansı çətinliklər mövcuddur?,Yalnız işçilərin azaldılması,Texnologiyanın inkişaf sürəti,Verilənlər bazasının ölçüsü,Təhlükəsizlik və məlumatların qorunması məsələləri,D
+Süni intellektin aviasiyada təhlükəsizlik məqsədilə istifadəsi hansı şəkildə olur?,Hava limanlarında təhlükəsizlik yoxlamalarının təkmilləşdirilməsi,Uçuş zamanı sərnişin xidmətlərini təkmilləşdirmək,Uçuşların qiymətini təhlil etmək,Uçuşlara yalnız pilotlar nəzarət edir,A
+Süni intellektin aviasiyada tətbiqində hansı alqoritmalar istifadə olunur?,Dərin öyrənmə (Deep Learning),Maşın təlimi (Machine Learning),Bütün qeyd edilənlər,Süni neyron şəbəkələri,C
+Süni intellektin inkişafı ilə hansı sektorda böyük dəyişikliklər baş verə bilər?,Kimya sənayesi,Təhsil və səhiyyə,Qida istehsalı,Pərakəndə satış,B
+Süni intellektin inkişafı ilə hansı təhlükə yaranır?,Məlumatın kənar şəxslərə ötürülməsi,Məlumatın itməsi,Sürətli texnoloji inkişafın qarşısı alınması,İnsan əməyinin əvəz olunması,D
+Süni intellektin inkişafında hansı problem üzləşir?,Yalnız çox məlumat lazım olur,İnsan davranışını heç vaxt təqlid edə bilməməsi,Yalnız texnologiyanın sürətinin artırılması,İnsan beyni kimi düşünə bilməməsi,D
+Süni intellektin inkişafında hansı sahələr əsas rol oynayır?,Ədəbiyyat və tarix,Biologiya və riyaziyyat,Həyat və sosial elmlər,Riyaziyyat və kompüter elmləri,D
+Süni intellektin təhlükəsizlik və etika məsələləri necə idarə olunur?,İnsanların nəzarəti ilə,Heç bir idarəetmə yoxdur,Tamamilə avtomatik idarə olunur,Yalnız riyazi modellərlə,A
+Süni intellektin tətbiqi hansı sahələrdə daha çox yayılıb?,Yalnız əyləncə və idman,Ətraf mühit və kənd təsərrüfatı,Riyaziyyat və fizika,Tibb və iqtisadiyyat,D
+Süni intellektin ən böyük məqsədi hansıdır?,İnsanları əvəz etmək,İnsanların işini asanlaşdırmaq,Yalnız hesablamalar aparmaq,Düşünmək və hiss etmək,B
+Süni intellektin ən geniş istifadə sahələrindən biri hansıdır?,Avtomobil sənayesi,"Təbiət mühafizəsi",Oyun dizaynı,Mətbəx texnologiyaları,A
+Süni intellektlə bağlı ən çox hansı etik problem mövcuddur?,Tətbiqlərin qeyri-məhdud istifadəsi,İnsanları manipulyasiya etmək,Yalnız sürətli inkişaf,Məlumatların qorunması və gizliliyi,D
+Süni intellektlə hansı növ sistemlər daha çox əlaqəli olur?,Sadə hesablama sistemləri,Yalnız kompüter sistemləri,İnsan beyninin işləmə prinsipləri,Təbiət hadisələri,C
+Süni intellektlə əlaqəli verilənlərin etiketlənməsi nə üçün lazımdır?,Maşının verilənləri düzgün şəkildə analiz etməsi üçün,Yalnız məlumatların daha sürətli öyrənilməsi üçün,Modelin şəbəkə strukturunun qurulması üçün,Məlumatın paylaşılması üçün,A
+Supervised learning-də modelin nəticələrini qiymətləndirmək üçün hansı istifadə olunur?,Modelin zamanla dəyişməsi,Verilənlərin etiketi,Sinir şəbəkələri,Maşının öz təcrübəsi,B
+Supervised learning-də modelin öyrənməsi üçün nə tələb olunur?,Cəza və mükafat,Təlim və test verilənləri,Yalnız test verilənləri,Qeyri-etiketli verilənlər,B
+Supervised learning-də nə olur?,Maşın heç vaxt səhv etmir,Məlumatlardan yalnız birini seçir,Məlumatın etiketləri və cavabları məlum olur,Etiketsiz verilənlərdən öyrənilir,C
+Supervised learning-də verilənlərin təhlilinə nə ad verilir?,Sinifləndirmə,Nümunə çıxarma,Qruplaşdırma,Etiketləmə,A
+SVM (Support Vector Machine) alqoritması hansı məqsəd üçün istifadə olunur?,Sinir şəbəkələri ilə əlaqə qurmaq,Yalnız təsadüfi verilənlərlə işləmək,Etiketsiz verilənlərdən öyrənmək,Kategoriyaların ayrılmasını təmin etmək,D
+SVM (Support Vector Machine) alqoritması əsasən hansı sahədə istifadə olunur?,Qruplaşdırma,Sinifləndirmə,Zamanla dəyişən proqnozlar,Reqressiya,B
+Şəkil məlumatlarını kompüterə ötürərkən hansı format daha çox istifadə olunur?,".jpg, .png",.txt,.mp3,.csv,A
+"Şəkil sinifləndirmə modelində ""batch size"" nəyi göstərir?",Modelin öyrənmə sürətini təyin edir,Modelin çıxışını göstərir,Modelin təlim verilənlərindəki ümumi sayını,Modelin təlimi üçün verilənlərin qruplarını göstərir,D
+"Şəkil sinifləndirmə modelində ""learning rate"" nədir?",Modelin optimallaşdırılmasını təmin edir,Modelin giriş verilənlərinin sayını göstərir,Modelin çıxışını göstərir,Modelin təlimi zamanı çəkilərin nə qədər dəyişəcəyini göstərən parametr,D
+"Şəkil sinifləndirmə modelində ""pooling"" əməliyyatı nəyi təmin edir?",Şəbəkə daxilində keçən məlumatın axınını artırmaq,Şəkilin ölçüsünü artırmaq,Şəbəkənin optimallaşdırılmasını təmin etmək,Şəkilin əsas xüsusiyyətlərini çıxarmaq və ölçüsünü kiçiltmək,D
+Şəkil sinifləndirmə modelində aktivasiya funksiyasının rolu nədir?,Modelin optimallaşdırılması,Şəkilin rənglərini dəyişdirmək,Şəbəkənin çıxışını qeyri-xətti şəkildə formalaşdırmaq,Şəkilin ölçüsünü dəyişdirmək,C
+Şəkil sinifləndirmə modelinin daha yaxşı performans göstərməsi üçün verilənlər bazasında hansı üsul tətbiq edilə bilər?,Data Augmentation,Shuffling,Hamısı,Normalization,C
+Şəkil sinifləndirmə modelinin təlimində hansı itki funksiyası daha çox istifadə edilir?,Kullback-Leibler Divergence,Mean Squared Error (MSE),Hinge Loss,Cross-Entropy Loss,D
+Şəkil sinifləndirmə modellərində hansı üsul overfitting-i azaltmağa kömək edir?,Early stopping,Bütün qeyd edilənlər,Dropout,Data augmentation,B
+"Şəkil sinifləndirmə məsələlərində hansı verilənlər ""image augmentation"" üçün istifadə olunur?",Şəkilləri rotasiya və refleksiya etmək,Şəkil kontrastını azaltmaq,Şəkil ölçülərini dəyişdirmək,Şəkil xətalarını artırmaq,A
+Şəkil sinifləndirmə məsələlərində hansı ən çox istifadə olunan təlim dəstidir?,CIFAR-10,MNIST,ImageNet,COCO,C
+Şəkil sinifləndirmə məsələlərində verilənlər bazası olaraq hansı çox istifadə edilən məlumat dəsti mövcuddur?,MNIST,Titanic,Iris,Boston Housing,A
+Şəkil sinifləndirmə üçün məşhur CNN modelindən biri hansıdır,VGGNet,KNN,LSTM,Decision Trees,A
+Şəkil sinifləndirmə üçün ən çox istifadə edilən aktivasiya funksiyası hansıdır?,Tanh,Sigmoid,Softmax,ReLU,D
+Şəkil sinifləndirməsi (Image Classification) nədir?,Şəkilləri rənglərə görə təsnif etmək,Şəkillərdəki obyektləri tanımaq,Şəkilləri ölçmək,Şəkilləri müxtəlif kateqoriyalara ayırmaq,D
+"Şəkil üzərində ""bounding box"" təhlilini optimallaşdırmaq üçün hansı üsul istifadə olunur?",Batch Normalization,Non-Maximum Suppression (NMS),Dropout,Gradient Descent,B
+Tanh funksiyası hansı xüsusiyyətə malikdir?,Çıxış yalnız müsbət dəyərlərdir,Çıxış həmişə 1-dir,Çıxış yalnız sıfırdır,Çıxış -1 ilə 1 arasında dəyişir,D
+Transfer learning nədir?,Mövcud bir modelin təlimatları ilə yeni bir problemi həll etmək,Modelin sıfırdan öyrənməyə başlaması,Yalnız yeni şəkilləri sinifləndirmək,Modelin birbaşa təlim verilənlərindən öyrənməsi,A
+Təbii dil işlənməsi (NLP) hansı məqsəd üçün istifadə olunur?,İnsanların düşüncələrini təqlid etmək,Şəkilləri tanımaq,Mətni analiz etmək və insan dilini başa düşmək,Video oyunları yaratmaq,C
+Təsadüfi meşə modelinin ən böyük üstünlüyü nədir?,Verilənlərdəki səhvlərə qarşı davamlı olması,Çox sürətli nəticələr əldə etməsi,Modelin sadə və asan olması,Yalnız çox sayda verilənlərlə işləməsi,A
+Tətbiq mühitində modelin yüklənməsi və idarə edilməsi üçün hansı alətləri istifadə edə bilərik?,"SQLite, MongoDB","Jupyter Notebook, TensorFlow","Pandas, NumPy","Docker, Kubernetes",D
+Unsupervised learning hansı vəziyyətdə istifadə edilir?,Yalnız rəqəmsal verilənlərlə,İnsan məlumatı olmadan,Etiketsiz verilənlərlə,Yalnız sinir şəbəkələri ilə,C
+Verilənləri modelə daxil etməzdən əvvəl nə etməliyik?,Verilənləri təmizləməliyik,Yalnız çox sayda məlumat istifadə etməliyik,Modeli dəyişdirməliyik,Verilənləri təsadüfi seçməliyik,A
+Yalnız bir dəyişkənin xətti əlaqəsini modelləşdirmək üçün hansı üsul istifadə olunur?,Lineyar reqressiya,K-nearest neighbors (KNN),Decision Tree,Logistic reqressiya,A
+Yalnız bir sinfi tapmağa çalışan modelə nə deyilir?,Multiclass classification,Binary classification,Regression,Clustering,B
+"YOLO modelində ""grid"" nəyi ifadə edir",Şəkilin kontrastını artırmaq,Şəkilin ölçüsünü artırmaq,Obyektlərin sayını hesablamaq,Şəkili kiçik hissələrə bölmək və hər hissədə obyekt aşkarlamağa çalışmaq,D
+"YOLO modelində ""output layer""də hansı məlumatlar çıxarılır?",Şəkilin ölçüləri,Modelin optimallaşdırılması,Modelin səhvləri,Obyektin tipini və yerini (bounding box koordinatları),D
+YOLO modelinin təlimi hansı üsuldan istifadə edir?,Supervised learning,Unsupervised learning,Reinforcement learning,Semi-supervised learning,D
+YOLO modelinin əsas xüsusiyyəti nədir?,Bütün şəkili eyni anda bir dəfə təhlil edir və obyektləri müəyyən edir,Obyektləri sadəcə ölçülərinə görə təhlil edir,Şəkilləri hər dəfə bir-bir təhlil edərək obyektləri tapır,Yalnız şəkillərdəki obyektləri tanıyır,A
+YOLOv4 modeli hansı xüsusiyyətə malikdir?,Obyektləri yalnız müəyyən ölçüdə aşkarlamaq,"Həm kiçik, həm böyük obyektləri daha sürətli təhlil etmək",Şəkillərin həddindən artıq böyük ölçüsünü təhlil etmək,Modelin təlimini sürətləndirmək üçün daha çox qatları ehtiva etmək,B
