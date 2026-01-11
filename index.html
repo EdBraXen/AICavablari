@@ -16,29 +16,28 @@
         .question-text { font-weight: 600; font-size: 18px; margin-bottom: 15px; color: #2c3e50; }
         .options-list { list-style-type: none; padding: 0; }
         
-        /* DÜZƏLİŞ EDİLƏN HİSSƏ: CSS */
+        /* DİZAYN HİSSƏSİ (Klikləmə sahəsi problemi həll olunub) */
         .options-list li { 
             margin-bottom: 10px; 
             border-radius: 6px; 
             background: #f1f3f5; 
             border: 2px solid transparent; 
-            overflow: hidden; /* Kenardan daşmaların qarşısını alır */
+            overflow: hidden;
         }
         
-        /* Label bütün sahəni tutmalıdır ki, qutunun hər yeri kliklənsin */
         .options-list li label {
             display: flex;
-            align-items: center; /* Yazını və düyməni mərkəzləşdirir */
+            align-items: center; 
             padding: 12px 15px;
             width: 100%;
             height: 100%;
             cursor: pointer;
-            box-sizing: border-box; /* Padding ölçünü pozmasın */
+            box-sizing: border-box; 
         }
 
         .options-list li label input[type="radio"] {
             margin-right: 12px;
-            transform: scale(1.2); /* Düyməni bir az böyütdük */
+            transform: scale(1.2);
             cursor: pointer;
         }
 
@@ -46,7 +45,6 @@
             background-color: #e2e6ea;
         }
 
-        /* Seçiləndə avtomatik rəng dəyişimi (əlavə effekt) */
         .options-list li:has(input:checked) {
             background-color: #dbeafe;
             border-color: var(--primary);
@@ -81,7 +79,7 @@
 </div>
 
 <script>
-    // FAYLIN ADI
+    // CSV faylının adı eynidir
     const csvFileName = "AICVBLAR(Sheet1).csv";
     
     let allQuestionsRaw = [];
@@ -154,25 +152,34 @@
         document.getElementById('quizTitle').innerText = `Quiz (${shuffledSelection.length} sual)`;
 
         shuffledSelection.forEach((q, index) => {
-            let correctLetter = q["Dogru cavab"].trim().toUpperCase();
-            let correctText = q[correctLetter] ? q[correctLetter].trim() : "";
+            // ƏSAS DƏYİŞİKLİK BURADADIR:
+            // "C" kimi hərfi götürürük
+            let correctLetter = q["Dogru cavab"].trim().toUpperCase(); 
 
-            let options = [q.A, q.B, q.C, q.D].filter(o => o && o.trim() !== "");
-            options = shuffleArray(options);
+            // Variantları yaratarkən həm mətni, həm də onun hərfini (key) yadda saxlayırıq
+            let optionsObj = [
+                { key: 'A', text: q.A },
+                { key: 'B', text: q.B },
+                { key: 'C', text: q.C },
+                { key: 'D', text: q.D }
+            ].filter(o => o.text && o.text.trim() !== "");
+
+            // Variantları qarışdırırıq (Shuffle)
+            optionsObj = shuffleArray(optionsObj);
 
             const card = document.createElement('div');
             card.className = 'question-card';
-            card.dataset.correct = correctText; 
+            // Düzgün cavabın hərfini (Key) yaddaşa yazırıq
+            card.dataset.correctKey = correctLetter; 
 
             let optionsHtml = '';
-            options.forEach((opt) => {
-                let safeValue = opt.replace(/"/g, '&quot;');
-                // DÜZƏLİŞ: label-i li-nin tam içinə oturtduq və input-u düzgün yerləşdirdik
+            optionsObj.forEach((opt) => {
+                // Radio button-un 'value'su artıq mətn yox, "A", "B" və s. olacaq
                 optionsHtml += `
                     <li>
                         <label>
-                            <input type="radio" name="question_${index}" value="${safeValue}">
-                            <span>${opt}</span>
+                            <input type="radio" name="question_${index}" value="${opt.key}">
+                            <span>${opt.text}</span>
                         </label>
                     </li>
                 `;
@@ -192,15 +199,22 @@
         let total = cards.length;
 
         cards.forEach(card => {
-            const correctAnswerText = card.dataset.correct;
+            // Doğru cavab hərfi (Məsələn: "C")
+            const correctKey = card.dataset.correctKey;
+            
+            // İstifadəçinin seçdiyi radio button
             const selectedOption = card.querySelector('input[type="radio"]:checked');
             const listItems = card.querySelectorAll('li');
             
+            // Köhnə rəngləri təmizlə
             listItems.forEach(li => li.classList.remove('correct-answer', 'wrong-answer'));
 
             let isCorrect = false;
+            
             if (selectedOption) {
-                if (selectedOption.value === correctAnswerText) {
+                // Məntiqli Yoxlama: İstifadəçinin seçdiyi Hərf === Doğru Hərf?
+                // Məsələn: "C" === "C" ?
+                if (selectedOption.value === correctKey) {
                     correctCount++;
                     isCorrect = true;
                     selectedOption.closest('li').classList.add('correct-answer');
@@ -209,13 +223,13 @@
                 }
             }
 
+            // Əgər istifadəçi səhv seçibsə və ya heç nə seçməyibsə, düzgünü göstər
             if (!isCorrect) {
                 listItems.forEach(li => {
-                    // Düzgün cavabı tapmaq üçün input-un dəyərini yoxlayırıq (texti yox, value-nu)
                     const input = li.querySelector('input');
-                    if (input && input.value === correctAnswerText) {
+                    // Hansı inputun value-su doğru hərfdirsə, onu yaşılla
+                    if (input && input.value === correctKey) {
                         li.classList.add('correct-answer');
-                        // Doğru işarəsini label-in içinə əlavə edirik ki, sürüşməsin
                         const labelSpan = li.querySelector('label span');
                         if(labelSpan) labelSpan.innerHTML += ' <b>(✔ Doğru)</b>';
                     }
