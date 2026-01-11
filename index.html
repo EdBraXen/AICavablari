@@ -15,9 +15,46 @@
         .question-card { background: #fff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
         .question-text { font-weight: 600; font-size: 18px; margin-bottom: 15px; color: #2c3e50; }
         .options-list { list-style-type: none; padding: 0; }
-        .options-list li { margin-bottom: 10px; padding: 10px 15px; border-radius: 6px; background: #f1f3f5; cursor: pointer; border: 2px solid transparent; }
+        
+        /* DÜZƏLİŞ EDİLƏN HİSSƏ: CSS */
+        .options-list li { 
+            margin-bottom: 10px; 
+            border-radius: 6px; 
+            background: #f1f3f5; 
+            border: 2px solid transparent; 
+            overflow: hidden; /* Kenardan daşmaların qarşısını alır */
+        }
+        
+        /* Label bütün sahəni tutmalıdır ki, qutunun hər yeri kliklənsin */
+        .options-list li label {
+            display: flex;
+            align-items: center; /* Yazını və düyməni mərkəzləşdirir */
+            padding: 12px 15px;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            box-sizing: border-box; /* Padding ölçünü pozmasın */
+        }
+
+        .options-list li label input[type="radio"] {
+            margin-right: 12px;
+            transform: scale(1.2); /* Düyməni bir az böyütdük */
+            cursor: pointer;
+        }
+
+        .options-list li:hover {
+            background-color: #e2e6ea;
+        }
+
+        /* Seçiləndə avtomatik rəng dəyişimi (əlavə effekt) */
+        .options-list li:has(input:checked) {
+            background-color: #dbeafe;
+            border-color: var(--primary);
+        }
+
         .correct-answer { background-color: #d4edda !important; border-color: var(--success) !important; color: #155724; }
         .wrong-answer { background-color: #f8d7da !important; border-color: var(--error) !important; color: #721c24; }
+        
         .submit-btn { display: block; width: 100%; padding: 15px; background-color: var(--success); color: white; border: none; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer; margin-top: 20px; }
         .result-box { text-align: center; padding: 20px; background: #343a40; color: white; border-radius: 8px; margin-top: 20px; display: none; }
         .loading { text-align: center; font-size: 1.2em; color: #666; padding: 20px; }
@@ -44,12 +81,11 @@
 </div>
 
 <script>
-    // FAYLIN ADI BURADADIR
+    // FAYLIN ADI
     const csvFileName = "AICVBLAR(Sheet1).csv";
     
     let allQuestionsRaw = [];
 
-    // Səhifə açılan kimi faylı oxumağa başlayır
     window.onload = function() {
         fetchData();
     };
@@ -58,7 +94,7 @@
         fetch(csvFileName)
             .then(response => {
                 if (!response.ok) {
-                    throw new Error(`Fayl tapılmadı! Adın "${csvFileName}" olduğuna və "Live Server" istifadə etdiyinizə əmin olun.`);
+                    throw new Error(`Fayl tapılmadı! Adın "${csvFileName}" olduğuna əmin olun.`);
                 }
                 return response.text();
             })
@@ -79,13 +115,12 @@
     }
 
     function processData(results) {
-        // Sütun yoxlanışı
         const required = ["Sual", "A", "B", "C", "D", "Dogru cavab"];
         const missing = required.filter(field => !results.meta.fields.includes(field));
 
         if (missing.length > 0) {
             document.getElementById('loadingMsg').style.display = 'none';
-            document.getElementById('errorDisplay').innerText = `XƏTA: CSV faylında bu sütunlar yoxdur: ${missing.join(", ")}`;
+            document.getElementById('errorDisplay').innerText = `XƏTA: CSV sütunları çatmır: ${missing.join(", ")}`;
             return;
         }
 
@@ -108,14 +143,12 @@
         return array;
     }
 
-    // Quiz prosesi (əvvəlki kimi)
     function renderQuiz() {
         const list = document.getElementById('questionsList');
         list.innerHTML = '';
         document.getElementById('resultBox').style.display = 'none';
         document.querySelector('.submit-btn').style.display = 'block';
 
-        // 50 sual limiti
         let shuffledSelection = shuffleArray([...allQuestionsRaw]).slice(0, 50);
         
         document.getElementById('quizTitle').innerText = `Quiz (${shuffledSelection.length} sual)`;
@@ -133,13 +166,13 @@
 
             let optionsHtml = '';
             options.forEach((opt) => {
-                // Dırnaq işarələrini qorumaq üçün replace
                 let safeValue = opt.replace(/"/g, '&quot;');
+                // DÜZƏLİŞ: label-i li-nin tam içinə oturtduq və input-u düzgün yerləşdirdik
                 optionsHtml += `
                     <li>
                         <label>
                             <input type="radio" name="question_${index}" value="${safeValue}">
-                            ${opt}
+                            <span>${opt}</span>
                         </label>
                     </li>
                 `;
@@ -163,7 +196,6 @@
             const selectedOption = card.querySelector('input[type="radio"]:checked');
             const listItems = card.querySelectorAll('li');
             
-            // Köhnə rəngləri sil
             listItems.forEach(li => li.classList.remove('correct-answer', 'wrong-answer'));
 
             let isCorrect = false;
@@ -179,9 +211,13 @@
 
             if (!isCorrect) {
                 listItems.forEach(li => {
-                    if (li.innerText.trim() === correctAnswerText) {
+                    // Düzgün cavabı tapmaq üçün input-un dəyərini yoxlayırıq (texti yox, value-nu)
+                    const input = li.querySelector('input');
+                    if (input && input.value === correctAnswerText) {
                         li.classList.add('correct-answer');
-                        li.innerHTML += ' <b>(✔ Doğru)</b>';
+                        // Doğru işarəsini label-in içinə əlavə edirik ki, sürüşməsin
+                        const labelSpan = li.querySelector('label span');
+                        if(labelSpan) labelSpan.innerHTML += ' <b>(✔ Doğru)</b>';
                     }
                 });
             }
